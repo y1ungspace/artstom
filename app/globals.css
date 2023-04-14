@@ -19,6 +19,6 @@
 
 @layer components {
   body {
-    @apply bg-slate-950 text-white
+    @apply bg-[#0B0D0F] text-white
   }
 } 

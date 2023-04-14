@@ -1,6 +1,6 @@
 const Divider: React.FC = () => {
   return(
-    <div className="w-1 h-10 bg-white" />
+    <div className="w-px h-10 bg-white" />
   )
 }
 
