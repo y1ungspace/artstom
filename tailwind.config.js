@@ -7,6 +7,9 @@ module.exports = {
   ],
   theme: {
     extend: {
+      animation: {
+        slider: 'slider 1s ease-in-out forward',
+      },
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
         'gradient-conic':
@@ -17,10 +20,16 @@ module.exports = {
           1: '#FFFFFF', //white
           2: '#1CACE4', //blue
           3: '#3E3E3E', //gray
-        }
+        },
       },
       height: {
         100: '100px',
+      },
+      keyframes: {
+        slider: {
+          '0%': {transform: 'scale(1)', background: 'inherit'},
+          '100%': {transform: 'scale(1.25)', background: '#FFFFFF'},
+        }
       },
       width: {
         100: '100px',
@@ -28,4 +37,10 @@ module.exports = {
     },
   },
   plugins: [],
+  safelist: [
+    {
+      pattern: /bg-(sky|green|blue)-(400|500|600)/,
+      pattern: /transition-(all|none)/,
+    },
+  ]
 }

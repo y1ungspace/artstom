@@ -2894,6 +2894,32 @@ self.__RSC_MANIFEST={
         "async": false
       }
     },
+    "(app-client)/./app/components/home/Slider.tsx": {
+      "*": {
+        "id": "(sc_client)/./app/components/home/Slider.tsx",
+        "name": "*",
+        "chunks": [
+          "app/page:app/page"
+        ],
+        "async": false
+      },
+      "": {
+        "id": "(sc_client)/./app/components/home/Slider.tsx",
+        "name": "",
+        "chunks": [
+          "app/page:app/page"
+        ],
+        "async": false
+      },
+      "default": {
+        "id": "(sc_client)/./app/components/home/Slider.tsx",
+        "name": "default",
+        "chunks": [
+          "app/page:app/page"
+        ],
+        "async": false
+      }
+    },
     "(app-client)/./app/components/navbar/Logo.tsx": {
       "*": {
         "id": "(sc_client)/./app/components/navbar/Logo.tsx",
@@ -9469,6 +9495,30 @@ self.__RSC_MANIFEST={
       "chunks": [
         "static/css/app/page.css"
       ]
+    },
+    "/Users/bessonovnikita/Documents/GitHub/artstom/app/components/home/Slider.tsx": {
+      "id": "(app-client)/./app/components/home/Slider.tsx",
+      "name": "*",
+      "chunks": [
+        "app/page:app/page"
+      ],
+      "async": false
+    },
+    "/Users/bessonovnikita/Documents/GitHub/artstom/app/components/home/Slider.tsx#": {
+      "id": "(app-client)/./app/components/home/Slider.tsx",
+      "name": "",
+      "chunks": [
+        "app/page:app/page"
+      ],
+      "async": false
+    },
+    "/Users/bessonovnikita/Documents/GitHub/artstom/app/components/home/Slider.tsx#default": {
+      "id": "(app-client)/./app/components/home/Slider.tsx",
+      "name": "default",
+      "chunks": [
+        "app/page:app/page"
+      ],
+      "async": false
     },
     "/Users/bessonovnikita/Documents/GitHub/artstom/app/globals.css#": {
       "id": "null",
