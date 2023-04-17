@@ -9,7 +9,7 @@ const fontInter = Inter({
 
 export default function Home() {
   return (
-    <section className='bg-background bg-top h-[1000px]'>
+    <section className='bg-background bg-cover h-[1000px]'>
       <div className={fontInter.className + ' flex justify-between  w-[1248px] py-24 mx-auto'}>
         <div className='w-2/5'>
           <h1 className='text-5xl my-11'>Ваша улыбка заслуживает внимания</h1>
