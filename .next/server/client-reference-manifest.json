@@ -9489,7 +9489,7 @@
       ],
       "async": false
     },
-    "/Users/bessonovnikita/Documents/GitHub/artstom/node_modules/next/font/google/target.css?{\"path\":\"app/page.tsx\",\"import\":\"Inter\",\"arguments\":[{\"subsets\":[\"latin\"]}],\"variableName\":\"inter\"}#": {
+    "/Users/bessonovnikita/Documents/GitHub/artstom/node_modules/next/font/google/target.css?{\"path\":\"app/page.tsx\",\"import\":\"Inter\",\"arguments\":[{\"subsets\":[\"latin\"],\"weight\":\"300\"}],\"variableName\":\"fontInter\"}#": {
       "id": "null",
       "name": "default",
       "chunks": [
@@ -9527,7 +9527,7 @@
         "static/css/app/layout.css"
       ]
     },
-    "/Users/bessonovnikita/Documents/GitHub/artstom/node_modules/next/font/google/target.css?{\"path\":\"app/layout.tsx\",\"import\":\"Oswald\",\"arguments\":[{\"subsets\":[\"latin\"]}],\"variableName\":\"font\"}#": {
+    "/Users/bessonovnikita/Documents/GitHub/artstom/node_modules/next/font/google/target.css?{\"path\":\"app/layout.tsx\",\"import\":\"Oswald\",\"arguments\":[{\"subsets\":[\"latin\"]}],\"variableName\":\"fontOswald\"}#": {
       "id": "null",
       "name": "default",
       "chunks": [

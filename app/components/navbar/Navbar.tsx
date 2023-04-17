@@ -7,7 +7,7 @@ import Title from "./Title"
 
 const Navbar: React.FC = () => {
   return(
-    <>
+    <section className="sticky top-0 bg-base-4/80">
       <div className="flex px-3 pt-1">
         <div className="flex items-center gap-4">
           <Logo />
@@ -18,10 +18,9 @@ const Navbar: React.FC = () => {
           <Contacts />
           <MenuButton />
         </div>
-  
       </div>
       <Sections />
-    </>
+    </section>
   )
 }
 

@@ -11,7 +11,7 @@ module.exports = {
         slider: 'slider 1s ease-in-out forward',
       },
       backgroundImage: {
-        'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
+        'background': 'url("../public/images/background.jpg")',
         'gradient-conic':
           'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
       },
@@ -20,6 +20,7 @@ module.exports = {
           1: '#FFFFFF', //white
           2: '#1CACE4', //blue
           3: '#3E3E3E', //gray
+          4: '#0B0D0F', //black
         },
       },
       height: {

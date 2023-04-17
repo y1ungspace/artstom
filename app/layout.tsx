@@ -7,7 +7,7 @@ export const metadata = {
   description: 'Артстом',
 }
 
-const font = Oswald ({
+const fontOswald = Oswald ({
   subsets: ["latin"],
 });
 
@@ -19,7 +19,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={font.className}>
+      <body className={fontOswald.className + ' mx-auto'}>
         <Navbar />
         {children}
       </body>
