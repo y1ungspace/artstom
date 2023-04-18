@@ -721,13 +721,10 @@ body {
   background-color: rgb(250 204 21 / var(--tw-bg-opacity));
 }
 .bg-background {
-  background-image: url(/_next/static/media/background.99fd45c9.jpg);
+  background-image: url(/_next/static/media/background.087ec0f6.jpg);
 }
 .bg-cover {
   background-size: cover;
-}
-.bg-top {
-  background-position: top;
 }
 .fill-base-3 {
   fill: #3E3E3E;
