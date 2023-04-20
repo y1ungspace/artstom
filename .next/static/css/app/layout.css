@@ -49,6 +49,144 @@
 }.__className_6856dc {font-family: '__Oswald_6856dc', '__Oswald_Fallback_6856dc';font-style: normal
 }
 
+/*!*****************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[2].oneOf[3].use[1]!./node_modules/next/dist/build/webpack/loaders/next-font-loader/index.js??ruleSet[1].rules[2].oneOf[3].use[2]!./node_modules/next/font/google/target.css?{"path":"app/components/navbar/Contacts.tsx","import":"Inter","arguments":[{"subsets":["latin"],"weight":"300"}],"variableName":"fontInter"} ***!
+  \*****************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+/* cyrillic-ext */
+@font-face {
+  font-family: '__Inter_247df0';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url(/_next/static/media/326b855ef568dc64-s.woff2) format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: '__Inter_247df0';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url(/_next/static/media/0b0dc6ad41db9546-s.woff2) format('woff2');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* greek-ext */
+@font-face {
+  font-family: '__Inter_247df0';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url(/_next/static/media/7457f714340aa99b-s.woff2) format('woff2');
+  unicode-range: U+1F00-1FFF;
+}
+/* greek */
+@font-face {
+  font-family: '__Inter_247df0';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url(/_next/static/media/878388f453adeb4f-s.woff2) format('woff2');
+  unicode-range: U+0370-03FF;
+}
+/* vietnamese */
+@font-face {
+  font-family: '__Inter_247df0';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url(/_next/static/media/4913e343e364c315-s.woff2) format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: '__Inter_247df0';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url(/_next/static/media/ff6159dd2c1afc69-s.woff2) format('woff2');
+  unicode-range: U+0100-02AF, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: '__Inter_247df0';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url(/_next/static/media/e32130b794b789cb-s.p.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}@font-face {font-family: '__Inter_Fallback_247df0';src: local("Arial");ascent-override: 90.20%;descent-override: 22.48%;line-gap-override: 0.00%;size-adjust: 107.40%
+}.__className_247df0 {font-family: '__Inter_247df0', '__Inter_Fallback_247df0';font-weight: 300;font-style: normal
+}
+
+/*!**************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[2].oneOf[3].use[1]!./node_modules/next/dist/build/webpack/loaders/next-font-loader/index.js??ruleSet[1].rules[2].oneOf[3].use[2]!./node_modules/next/font/google/target.css?{"path":"app/components/navbar/Title.tsx","import":"Inter","arguments":[{"subsets":["latin"],"weight":"200"}],"variableName":"fontInter"} ***!
+  \**************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+/* cyrillic-ext */
+@font-face {
+  font-family: '__Inter_f91092';
+  font-style: normal;
+  font-weight: 200;
+  font-display: swap;
+  src: url(/_next/static/media/e728db9ac181b33d-s.woff2) format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: '__Inter_f91092';
+  font-style: normal;
+  font-weight: 200;
+  font-display: swap;
+  src: url(/_next/static/media/1965830adf22e19a-s.woff2) format('woff2');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* greek-ext */
+@font-face {
+  font-family: '__Inter_f91092';
+  font-style: normal;
+  font-weight: 200;
+  font-display: swap;
+  src: url(/_next/static/media/b008a68ba78de04c-s.woff2) format('woff2');
+  unicode-range: U+1F00-1FFF;
+}
+/* greek */
+@font-face {
+  font-family: '__Inter_f91092';
+  font-style: normal;
+  font-weight: 200;
+  font-display: swap;
+  src: url(/_next/static/media/efc85351151d377d-s.woff2) format('woff2');
+  unicode-range: U+0370-03FF;
+}
+/* vietnamese */
+@font-face {
+  font-family: '__Inter_f91092';
+  font-style: normal;
+  font-weight: 200;
+  font-display: swap;
+  src: url(/_next/static/media/f46e596d91e9f323-s.woff2) format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: '__Inter_f91092';
+  font-style: normal;
+  font-weight: 200;
+  font-display: swap;
+  src: url(/_next/static/media/f4e855f0a765bf35-s.woff2) format('woff2');
+  unicode-range: U+0100-02AF, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: '__Inter_f91092';
+  font-style: normal;
+  font-weight: 200;
+  font-display: swap;
+  src: url(/_next/static/media/bb5d4cdd9ce7b9ef-s.p.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}@font-face {font-family: '__Inter_Fallback_f91092';src: local("Arial");ascent-override: 90.20%;descent-override: 22.48%;line-gap-override: 0.00%;size-adjust: 107.40%
+}.__className_f91092 {font-family: '__Inter_f91092', '__Inter_Fallback_f91092';font-weight: 200;font-style: normal
+}
+
 /*!***********************************************************************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[2].oneOf[13].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[2].oneOf[13].use[3]!./app/globals.css ***!
   \***********************************************************************************************************************************************************************************************************************************************************/
@@ -613,6 +751,9 @@ body {
 .h-\[50px\] {
   height: 50px;
 }
+.h-\[60px\] {
+  height: 60px;
+}
 .min-h-\[8px\] {
   min-height: 8px;
 }
@@ -633,6 +774,9 @@ body {
 }
 .w-px {
   width: 1px;
+}
+.w-\[60px\] {
+  width: 60px;
 }
 .min-w-\[600px\] {
   min-width: 600px;
@@ -740,6 +884,10 @@ body {
   padding-top: 6rem;
   padding-bottom: 6rem;
 }
+.py-1 {
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+}
 .pt-1 {
   padding-top: 0.25rem;
 }
@@ -757,6 +905,18 @@ body {
 .text-xl {
   font-size: 1.25rem;
   line-height: 1.75rem;
+}
+.text-lg {
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+}
+.text-sm {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+.text-xs {
+  font-size: 0.75rem;
+  line-height: 1rem;
 }
 .uppercase {
   text-transform: uppercase;
@@ -801,34 +961,41 @@ body {
   }
 } */
 
+
 .hover\:scale-125:hover {
   --tw-scale-x: 1.25;
   --tw-scale-y: 1.25;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
+
 .hover\:bg-base-1:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
+
 .hover\:fill-base-1:hover {
   fill: #FFFFFF;
 }
 
+
 .hover\:fill-base-2:hover {
   fill: #1CACE4;
 }
+
 
 .hover\:text-base-1:hover {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
+
 .hover\:text-base-2:hover {
   --tw-text-opacity: 1;
   color: rgb(28 172 228 / var(--tw-text-opacity));
 }
+
 
 @media (min-width: 768px) {
 

@@ -2894,32 +2894,6 @@ self.__RSC_MANIFEST={
         "async": false
       }
     },
-    "(app-client)/./app/components/home/Slider.tsx": {
-      "*": {
-        "id": "(sc_client)/./app/components/home/Slider.tsx",
-        "name": "*",
-        "chunks": [
-          "app/page:app/page"
-        ],
-        "async": false
-      },
-      "": {
-        "id": "(sc_client)/./app/components/home/Slider.tsx",
-        "name": "",
-        "chunks": [
-          "app/page:app/page"
-        ],
-        "async": false
-      },
-      "default": {
-        "id": "(sc_client)/./app/components/home/Slider.tsx",
-        "name": "default",
-        "chunks": [
-          "app/page:app/page"
-        ],
-        "async": false
-      }
-    },
     "(app-client)/./app/components/navbar/Logo.tsx": {
       "*": {
         "id": "(sc_client)/./app/components/navbar/Logo.tsx",
@@ -2997,15 +2971,41 @@ self.__RSC_MANIFEST={
         ],
         "async": false
       }
+    },
+    "(app-client)/./app/components/home/Slider.tsx": {
+      "*": {
+        "id": "(sc_client)/./app/components/home/Slider.tsx",
+        "name": "*",
+        "chunks": [
+          "app/page:app/page"
+        ],
+        "async": false
+      },
+      "": {
+        "id": "(sc_client)/./app/components/home/Slider.tsx",
+        "name": "",
+        "chunks": [
+          "app/page:app/page"
+        ],
+        "async": false
+      },
+      "default": {
+        "id": "(sc_client)/./app/components/home/Slider.tsx",
+        "name": "default",
+        "chunks": [
+          "app/page:app/page"
+        ],
+        "async": false
+      }
     }
   },
   "edgeSSRModuleMapping": {},
   "cssFiles": {
-    "/Users/bessonovnikita/Documents/GitHub/artstom/app/page": [
-      "static/css/app/page.css"
-    ],
     "/Users/bessonovnikita/Documents/GitHub/artstom/app/layout": [
       "static/css/app/layout.css"
+    ],
+    "/Users/bessonovnikita/Documents/GitHub/artstom/app/page": [
+      "static/css/app/page.css"
     ]
   },
   "clientModules": {
@@ -9489,38 +9489,21 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/Users/bessonovnikita/Documents/GitHub/artstom/node_modules/next/font/google/target.css?{\"path\":\"app/page.tsx\",\"import\":\"Inter\",\"arguments\":[{\"subsets\":[\"latin\"],\"weight\":\"300\"}],\"variableName\":\"fontInter\"}#": {
+    "/Users/bessonovnikita/Documents/GitHub/artstom/app/globals.css#": {
       "id": "null",
       "name": "default",
       "chunks": [
-        "static/css/app/page.css"
+        "static/css/app/layout.css"
       ]
     },
-    "/Users/bessonovnikita/Documents/GitHub/artstom/app/components/home/Slider.tsx": {
-      "id": "(app-client)/./app/components/home/Slider.tsx",
-      "name": "*",
-      "chunks": [
-        "app/page:app/page"
-      ],
-      "async": false
-    },
-    "/Users/bessonovnikita/Documents/GitHub/artstom/app/components/home/Slider.tsx#": {
-      "id": "(app-client)/./app/components/home/Slider.tsx",
-      "name": "",
-      "chunks": [
-        "app/page:app/page"
-      ],
-      "async": false
-    },
-    "/Users/bessonovnikita/Documents/GitHub/artstom/app/components/home/Slider.tsx#default": {
-      "id": "(app-client)/./app/components/home/Slider.tsx",
+    "/Users/bessonovnikita/Documents/GitHub/artstom/node_modules/next/font/google/target.css?{\"path\":\"app/components/navbar/Contacts.tsx\",\"import\":\"Inter\",\"arguments\":[{\"subsets\":[\"latin\"],\"weight\":\"300\"}],\"variableName\":\"fontInter\"}#": {
+      "id": "null",
       "name": "default",
       "chunks": [
-        "app/page:app/page"
-      ],
-      "async": false
+        "static/css/app/layout.css"
+      ]
     },
-    "/Users/bessonovnikita/Documents/GitHub/artstom/app/globals.css#": {
+    "/Users/bessonovnikita/Documents/GitHub/artstom/node_modules/next/font/google/target.css?{\"path\":\"app/components/navbar/Title.tsx\",\"import\":\"Inter\",\"arguments\":[{\"subsets\":[\"latin\"],\"weight\":\"200\"}],\"variableName\":\"fontInter\"}#": {
       "id": "null",
       "name": "default",
       "chunks": [
@@ -10259,6 +10242,37 @@ self.__RSC_MANIFEST={
       "name": "warnOnce",
       "chunks": [
         "app/layout:app/layout"
+      ],
+      "async": false
+    },
+    "/Users/bessonovnikita/Documents/GitHub/artstom/node_modules/next/font/google/target.css?{\"path\":\"app/page.tsx\",\"import\":\"Inter\",\"arguments\":[{\"subsets\":[\"latin\"],\"weight\":\"300\"}],\"variableName\":\"fontInter\"}#": {
+      "id": "null",
+      "name": "default",
+      "chunks": [
+        "static/css/app/page.css"
+      ]
+    },
+    "/Users/bessonovnikita/Documents/GitHub/artstom/app/components/home/Slider.tsx": {
+      "id": "(app-client)/./app/components/home/Slider.tsx",
+      "name": "*",
+      "chunks": [
+        "app/page:app/page"
+      ],
+      "async": false
+    },
+    "/Users/bessonovnikita/Documents/GitHub/artstom/app/components/home/Slider.tsx#": {
+      "id": "(app-client)/./app/components/home/Slider.tsx",
+      "name": "",
+      "chunks": [
+        "app/page:app/page"
+      ],
+      "async": false
+    },
+    "/Users/bessonovnikita/Documents/GitHub/artstom/app/components/home/Slider.tsx#default": {
+      "id": "(app-client)/./app/components/home/Slider.tsx",
+      "name": "default",
+      "chunks": [
+        "app/page:app/page"
       ],
       "async": false
     }

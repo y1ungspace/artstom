@@ -1,11 +1,17 @@
 import Image from "next/image";
+import { Inter } from 'next/font/google'
+
+const fontInter = Inter({
+  subsets: ["latin"],
+  weight: '300'
+})
 
 const Contacts: React.FC = () => {
   return(
-    <div className="flex justify-around items-center gap-3">
+    <div className={"flex justify-around items-center gap-3 " + fontInter.className}>
       <a className="hover:text-base-2" href="tel:89114536362">89114536362</a>
       {/* vk icon */}
-      <svg 
+      {/* <svg 
         xmlns="http://www.w3.org/2000/svg" 
         width="30" height="30" 
         viewBox="0 0 24 24"
@@ -20,9 +26,9 @@ const Contacts: React.FC = () => {
         0-3.841.953-2.95 1.119 1.571.293 1.42 3.692 1.054 
         5.16-.638 2.556-3.036-2.024-4.035-4.305-.241-.548-.315-.974-1.175-.974h-3.255c-.492 0-.787.16-.787.516 
         0 .602 2.96 6.72 5.786 9.77 2.756 2.975 5.48 2.708 7.376 2.708z" fill="#3E3E3E" 
-      /></svg>
+      /></svg> */}
       {/* whatsapp icon */}
-      <svg 
+      {/* <svg 
         xmlns="http://www.w3.org/2000/svg" 
         xmlnsXlink="http://www.w3.org/1999/xlink" 
         version="1.1" 
@@ -73,9 +79,9 @@ const Contacts: React.FC = () => {
             transform: 'matrix(1 0 0 1 0 0) stroke-linecap= round'
           }} />
         </g>
-      </svg>
+      </svg> */}
       {/* viber icon */}
-      <svg 
+      {/* <svg 
         xmlns="http://www.w3.org/2000/svg" 
         xmlnsXlink="http://www.w3.org/1999/xlink" 
         version="1.1" 
@@ -152,7 +158,7 @@ const Contacts: React.FC = () => {
             transform: "matrix(1 0 0 1 0 0) stroke-linecap='round'"
           }} />
         </g>
-      </svg>
+      </svg> */}
     </div>
   )
 }
