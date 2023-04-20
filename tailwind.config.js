@@ -20,7 +20,7 @@ module.exports = {
           1: '#FFFFFF', //white
           2: '#1CACE4', //blue
           3: '#3E3E3E', //gray
-          4: '#0B0D0F', //black
+          4: '#010101', //black
         },
       },
       height: {
