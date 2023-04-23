@@ -2894,6 +2894,186 @@
         "async": false
       }
     },
+    "(app-client)/./app/GlobalRedux/Features/burgerSlice.ts": {
+      "*": {
+        "id": "(sc_client)/./app/GlobalRedux/Features/burgerSlice.ts",
+        "name": "*",
+        "chunks": [
+          "app/layout:app/layout"
+        ],
+        "async": false
+      },
+      "": {
+        "id": "(sc_client)/./app/GlobalRedux/Features/burgerSlice.ts",
+        "name": "",
+        "chunks": [
+          "app/layout:app/layout"
+        ],
+        "async": false
+      },
+      "active": {
+        "id": "(sc_client)/./app/GlobalRedux/Features/burgerSlice.ts",
+        "name": "active",
+        "chunks": [
+          "app/layout:app/layout"
+        ],
+        "async": false
+      },
+      "burgerSlice": {
+        "id": "(sc_client)/./app/GlobalRedux/Features/burgerSlice.ts",
+        "name": "burgerSlice",
+        "chunks": [
+          "app/layout:app/layout"
+        ],
+        "async": false
+      },
+      "default": {
+        "id": "(sc_client)/./app/GlobalRedux/Features/burgerSlice.ts",
+        "name": "default",
+        "chunks": [
+          "app/layout:app/layout"
+        ],
+        "async": false
+      },
+      "disabled": {
+        "id": "(sc_client)/./app/GlobalRedux/Features/burgerSlice.ts",
+        "name": "disabled",
+        "chunks": [
+          "app/layout:app/layout"
+        ],
+        "async": false
+      }
+    },
+    "(app-client)/./app/GlobalRedux/provider.tsx": {
+      "*": {
+        "id": "(sc_client)/./app/GlobalRedux/provider.tsx",
+        "name": "*",
+        "chunks": [
+          "app/layout:app/layout"
+        ],
+        "async": false
+      },
+      "": {
+        "id": "(sc_client)/./app/GlobalRedux/provider.tsx",
+        "name": "",
+        "chunks": [
+          "app/layout:app/layout"
+        ],
+        "async": false
+      },
+      "Providers": {
+        "id": "(sc_client)/./app/GlobalRedux/provider.tsx",
+        "name": "Providers",
+        "chunks": [
+          "app/layout:app/layout"
+        ],
+        "async": false
+      }
+    },
+    "(app-client)/./app/GlobalRedux/store.ts": {
+      "*": {
+        "id": "(sc_client)/./app/GlobalRedux/store.ts",
+        "name": "*",
+        "chunks": [
+          "app/layout:app/layout"
+        ],
+        "async": false
+      },
+      "": {
+        "id": "(sc_client)/./app/GlobalRedux/store.ts",
+        "name": "",
+        "chunks": [
+          "app/layout:app/layout"
+        ],
+        "async": false
+      },
+      "store": {
+        "id": "(sc_client)/./app/GlobalRedux/store.ts",
+        "name": "store",
+        "chunks": [
+          "app/layout:app/layout"
+        ],
+        "async": false
+      }
+    },
+    "(app-client)/./app/components/navbar/BurgerMenu.tsx": {
+      "*": {
+        "id": "(sc_client)/./app/components/navbar/BurgerMenu.tsx",
+        "name": "*",
+        "chunks": [
+          "app/layout:app/layout"
+        ],
+        "async": false
+      },
+      "": {
+        "id": "(sc_client)/./app/components/navbar/BurgerMenu.tsx",
+        "name": "",
+        "chunks": [
+          "app/layout:app/layout"
+        ],
+        "async": false
+      },
+      "default": {
+        "id": "(sc_client)/./app/components/navbar/BurgerMenu.tsx",
+        "name": "default",
+        "chunks": [
+          "app/layout:app/layout"
+        ],
+        "async": false
+      }
+    },
+    "(app-client)/./app/components/navbar/Contacts.tsx": {
+      "*": {
+        "id": "(sc_client)/./app/components/navbar/Contacts.tsx",
+        "name": "*",
+        "chunks": [
+          "app/layout:app/layout"
+        ],
+        "async": false
+      },
+      "": {
+        "id": "(sc_client)/./app/components/navbar/Contacts.tsx",
+        "name": "",
+        "chunks": [
+          "app/layout:app/layout"
+        ],
+        "async": false
+      },
+      "default": {
+        "id": "(sc_client)/./app/components/navbar/Contacts.tsx",
+        "name": "default",
+        "chunks": [
+          "app/layout:app/layout"
+        ],
+        "async": false
+      }
+    },
+    "(app-client)/./app/components/navbar/Divider.tsx": {
+      "*": {
+        "id": "(sc_client)/./app/components/navbar/Divider.tsx",
+        "name": "*",
+        "chunks": [
+          "app/layout:app/layout"
+        ],
+        "async": false
+      },
+      "": {
+        "id": "(sc_client)/./app/components/navbar/Divider.tsx",
+        "name": "",
+        "chunks": [
+          "app/layout:app/layout"
+        ],
+        "async": false
+      },
+      "default": {
+        "id": "(sc_client)/./app/components/navbar/Divider.tsx",
+        "name": "default",
+        "chunks": [
+          "app/layout:app/layout"
+        ],
+        "async": false
+      }
+    },
     "(app-client)/./app/components/navbar/Logo.tsx": {
       "*": {
         "id": "(sc_client)/./app/components/navbar/Logo.tsx",
@@ -2913,6 +3093,84 @@
       },
       "default": {
         "id": "(sc_client)/./app/components/navbar/Logo.tsx",
+        "name": "default",
+        "chunks": [
+          "app/layout:app/layout"
+        ],
+        "async": false
+      }
+    },
+    "(app-client)/./app/components/navbar/MenuButton.tsx": {
+      "*": {
+        "id": "(sc_client)/./app/components/navbar/MenuButton.tsx",
+        "name": "*",
+        "chunks": [
+          "app/layout:app/layout"
+        ],
+        "async": false
+      },
+      "": {
+        "id": "(sc_client)/./app/components/navbar/MenuButton.tsx",
+        "name": "",
+        "chunks": [
+          "app/layout:app/layout"
+        ],
+        "async": false
+      },
+      "default": {
+        "id": "(sc_client)/./app/components/navbar/MenuButton.tsx",
+        "name": "default",
+        "chunks": [
+          "app/layout:app/layout"
+        ],
+        "async": false
+      }
+    },
+    "(app-client)/./app/components/navbar/Navbar.tsx": {
+      "*": {
+        "id": "(sc_client)/./app/components/navbar/Navbar.tsx",
+        "name": "*",
+        "chunks": [
+          "app/layout:app/layout"
+        ],
+        "async": false
+      },
+      "": {
+        "id": "(sc_client)/./app/components/navbar/Navbar.tsx",
+        "name": "",
+        "chunks": [
+          "app/layout:app/layout"
+        ],
+        "async": false
+      },
+      "default": {
+        "id": "(sc_client)/./app/components/navbar/Navbar.tsx",
+        "name": "default",
+        "chunks": [
+          "app/layout:app/layout"
+        ],
+        "async": false
+      }
+    },
+    "(app-client)/./app/components/navbar/Title.tsx": {
+      "*": {
+        "id": "(sc_client)/./app/components/navbar/Title.tsx",
+        "name": "*",
+        "chunks": [
+          "app/layout:app/layout"
+        ],
+        "async": false
+      },
+      "": {
+        "id": "(sc_client)/./app/components/navbar/Title.tsx",
+        "name": "",
+        "chunks": [
+          "app/layout:app/layout"
+        ],
+        "async": false
+      },
+      "default": {
+        "id": "(sc_client)/./app/components/navbar/Title.tsx",
         "name": "default",
         "chunks": [
           "app/layout:app/layout"
@@ -9510,12 +9768,187 @@
         "static/css/app/layout.css"
       ]
     },
-    "/Users/bessonovnikita/Documents/GitHub/artstom/node_modules/next/font/google/target.css?{\"path\":\"app/layout.tsx\",\"import\":\"Oswald\",\"arguments\":[{\"subsets\":[\"latin\"]}],\"variableName\":\"fontOswald\"}#": {
+    "/Users/bessonovnikita/Documents/GitHub/artstom/node_modules/next/font/google/target.css?{\"path\":\"app/components/navbar/Title.tsx\",\"import\":\"Oswald\",\"arguments\":[{\"subsets\":[\"latin\"],\"weight\":\"400\"}],\"variableName\":\"fontOswald\"}#": {
       "id": "null",
       "name": "default",
       "chunks": [
         "static/css/app/layout.css"
       ]
+    },
+    "/Users/bessonovnikita/Documents/GitHub/artstom/node_modules/next/font/google/target.css?{\"path\":\"app/layout.tsx\",\"import\":\"Inter\",\"arguments\":[{\"subsets\":[\"latin\"],\"weight\":\"300\"}],\"variableName\":\"fontInter\"}#": {
+      "id": "null",
+      "name": "default",
+      "chunks": [
+        "static/css/app/layout.css"
+      ]
+    },
+    "/Users/bessonovnikita/Documents/GitHub/artstom/app/GlobalRedux/Features/burgerSlice.ts": {
+      "id": "(app-client)/./app/GlobalRedux/Features/burgerSlice.ts",
+      "name": "*",
+      "chunks": [
+        "app/layout:app/layout"
+      ],
+      "async": false
+    },
+    "/Users/bessonovnikita/Documents/GitHub/artstom/app/GlobalRedux/Features/burgerSlice.ts#": {
+      "id": "(app-client)/./app/GlobalRedux/Features/burgerSlice.ts",
+      "name": "",
+      "chunks": [
+        "app/layout:app/layout"
+      ],
+      "async": false
+    },
+    "/Users/bessonovnikita/Documents/GitHub/artstom/app/GlobalRedux/Features/burgerSlice.ts#active": {
+      "id": "(app-client)/./app/GlobalRedux/Features/burgerSlice.ts",
+      "name": "active",
+      "chunks": [
+        "app/layout:app/layout"
+      ],
+      "async": false
+    },
+    "/Users/bessonovnikita/Documents/GitHub/artstom/app/GlobalRedux/Features/burgerSlice.ts#burgerSlice": {
+      "id": "(app-client)/./app/GlobalRedux/Features/burgerSlice.ts",
+      "name": "burgerSlice",
+      "chunks": [
+        "app/layout:app/layout"
+      ],
+      "async": false
+    },
+    "/Users/bessonovnikita/Documents/GitHub/artstom/app/GlobalRedux/Features/burgerSlice.ts#default": {
+      "id": "(app-client)/./app/GlobalRedux/Features/burgerSlice.ts",
+      "name": "default",
+      "chunks": [
+        "app/layout:app/layout"
+      ],
+      "async": false
+    },
+    "/Users/bessonovnikita/Documents/GitHub/artstom/app/GlobalRedux/Features/burgerSlice.ts#disabled": {
+      "id": "(app-client)/./app/GlobalRedux/Features/burgerSlice.ts",
+      "name": "disabled",
+      "chunks": [
+        "app/layout:app/layout"
+      ],
+      "async": false
+    },
+    "/Users/bessonovnikita/Documents/GitHub/artstom/app/GlobalRedux/provider.tsx": {
+      "id": "(app-client)/./app/GlobalRedux/provider.tsx",
+      "name": "*",
+      "chunks": [
+        "app/layout:app/layout"
+      ],
+      "async": false
+    },
+    "/Users/bessonovnikita/Documents/GitHub/artstom/app/GlobalRedux/provider.tsx#": {
+      "id": "(app-client)/./app/GlobalRedux/provider.tsx",
+      "name": "",
+      "chunks": [
+        "app/layout:app/layout"
+      ],
+      "async": false
+    },
+    "/Users/bessonovnikita/Documents/GitHub/artstom/app/GlobalRedux/provider.tsx#Providers": {
+      "id": "(app-client)/./app/GlobalRedux/provider.tsx",
+      "name": "Providers",
+      "chunks": [
+        "app/layout:app/layout"
+      ],
+      "async": false
+    },
+    "/Users/bessonovnikita/Documents/GitHub/artstom/app/GlobalRedux/store.ts": {
+      "id": "(app-client)/./app/GlobalRedux/store.ts",
+      "name": "*",
+      "chunks": [
+        "app/layout:app/layout"
+      ],
+      "async": false
+    },
+    "/Users/bessonovnikita/Documents/GitHub/artstom/app/GlobalRedux/store.ts#": {
+      "id": "(app-client)/./app/GlobalRedux/store.ts",
+      "name": "",
+      "chunks": [
+        "app/layout:app/layout"
+      ],
+      "async": false
+    },
+    "/Users/bessonovnikita/Documents/GitHub/artstom/app/GlobalRedux/store.ts#store": {
+      "id": "(app-client)/./app/GlobalRedux/store.ts",
+      "name": "store",
+      "chunks": [
+        "app/layout:app/layout"
+      ],
+      "async": false
+    },
+    "/Users/bessonovnikita/Documents/GitHub/artstom/app/components/navbar/BurgerMenu.tsx": {
+      "id": "(app-client)/./app/components/navbar/BurgerMenu.tsx",
+      "name": "*",
+      "chunks": [
+        "app/layout:app/layout"
+      ],
+      "async": false
+    },
+    "/Users/bessonovnikita/Documents/GitHub/artstom/app/components/navbar/BurgerMenu.tsx#": {
+      "id": "(app-client)/./app/components/navbar/BurgerMenu.tsx",
+      "name": "",
+      "chunks": [
+        "app/layout:app/layout"
+      ],
+      "async": false
+    },
+    "/Users/bessonovnikita/Documents/GitHub/artstom/app/components/navbar/BurgerMenu.tsx#default": {
+      "id": "(app-client)/./app/components/navbar/BurgerMenu.tsx",
+      "name": "default",
+      "chunks": [
+        "app/layout:app/layout"
+      ],
+      "async": false
+    },
+    "/Users/bessonovnikita/Documents/GitHub/artstom/app/components/navbar/Contacts.tsx": {
+      "id": "(app-client)/./app/components/navbar/Contacts.tsx",
+      "name": "*",
+      "chunks": [
+        "app/layout:app/layout"
+      ],
+      "async": false
+    },
+    "/Users/bessonovnikita/Documents/GitHub/artstom/app/components/navbar/Contacts.tsx#": {
+      "id": "(app-client)/./app/components/navbar/Contacts.tsx",
+      "name": "",
+      "chunks": [
+        "app/layout:app/layout"
+      ],
+      "async": false
+    },
+    "/Users/bessonovnikita/Documents/GitHub/artstom/app/components/navbar/Contacts.tsx#default": {
+      "id": "(app-client)/./app/components/navbar/Contacts.tsx",
+      "name": "default",
+      "chunks": [
+        "app/layout:app/layout"
+      ],
+      "async": false
+    },
+    "/Users/bessonovnikita/Documents/GitHub/artstom/app/components/navbar/Divider.tsx": {
+      "id": "(app-client)/./app/components/navbar/Divider.tsx",
+      "name": "*",
+      "chunks": [
+        "app/layout:app/layout"
+      ],
+      "async": false
+    },
+    "/Users/bessonovnikita/Documents/GitHub/artstom/app/components/navbar/Divider.tsx#": {
+      "id": "(app-client)/./app/components/navbar/Divider.tsx",
+      "name": "",
+      "chunks": [
+        "app/layout:app/layout"
+      ],
+      "async": false
+    },
+    "/Users/bessonovnikita/Documents/GitHub/artstom/app/components/navbar/Divider.tsx#default": {
+      "id": "(app-client)/./app/components/navbar/Divider.tsx",
+      "name": "default",
+      "chunks": [
+        "app/layout:app/layout"
+      ],
+      "async": false
     },
     "/Users/bessonovnikita/Documents/GitHub/artstom/app/components/navbar/Logo.tsx": {
       "id": "(app-client)/./app/components/navbar/Logo.tsx",
@@ -9535,6 +9968,78 @@
     },
     "/Users/bessonovnikita/Documents/GitHub/artstom/app/components/navbar/Logo.tsx#default": {
       "id": "(app-client)/./app/components/navbar/Logo.tsx",
+      "name": "default",
+      "chunks": [
+        "app/layout:app/layout"
+      ],
+      "async": false
+    },
+    "/Users/bessonovnikita/Documents/GitHub/artstom/app/components/navbar/MenuButton.tsx": {
+      "id": "(app-client)/./app/components/navbar/MenuButton.tsx",
+      "name": "*",
+      "chunks": [
+        "app/layout:app/layout"
+      ],
+      "async": false
+    },
+    "/Users/bessonovnikita/Documents/GitHub/artstom/app/components/navbar/MenuButton.tsx#": {
+      "id": "(app-client)/./app/components/navbar/MenuButton.tsx",
+      "name": "",
+      "chunks": [
+        "app/layout:app/layout"
+      ],
+      "async": false
+    },
+    "/Users/bessonovnikita/Documents/GitHub/artstom/app/components/navbar/MenuButton.tsx#default": {
+      "id": "(app-client)/./app/components/navbar/MenuButton.tsx",
+      "name": "default",
+      "chunks": [
+        "app/layout:app/layout"
+      ],
+      "async": false
+    },
+    "/Users/bessonovnikita/Documents/GitHub/artstom/app/components/navbar/Navbar.tsx": {
+      "id": "(app-client)/./app/components/navbar/Navbar.tsx",
+      "name": "*",
+      "chunks": [
+        "app/layout:app/layout"
+      ],
+      "async": false
+    },
+    "/Users/bessonovnikita/Documents/GitHub/artstom/app/components/navbar/Navbar.tsx#": {
+      "id": "(app-client)/./app/components/navbar/Navbar.tsx",
+      "name": "",
+      "chunks": [
+        "app/layout:app/layout"
+      ],
+      "async": false
+    },
+    "/Users/bessonovnikita/Documents/GitHub/artstom/app/components/navbar/Navbar.tsx#default": {
+      "id": "(app-client)/./app/components/navbar/Navbar.tsx",
+      "name": "default",
+      "chunks": [
+        "app/layout:app/layout"
+      ],
+      "async": false
+    },
+    "/Users/bessonovnikita/Documents/GitHub/artstom/app/components/navbar/Title.tsx": {
+      "id": "(app-client)/./app/components/navbar/Title.tsx",
+      "name": "*",
+      "chunks": [
+        "app/layout:app/layout"
+      ],
+      "async": false
+    },
+    "/Users/bessonovnikita/Documents/GitHub/artstom/app/components/navbar/Title.tsx#": {
+      "id": "(app-client)/./app/components/navbar/Title.tsx",
+      "name": "",
+      "chunks": [
+        "app/layout:app/layout"
+      ],
+      "async": false
+    },
+    "/Users/bessonovnikita/Documents/GitHub/artstom/app/components/navbar/Title.tsx#default": {
+      "id": "(app-client)/./app/components/navbar/Title.tsx",
       "name": "default",
       "chunks": [
         "app/layout:app/layout"

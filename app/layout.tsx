@@ -1,15 +1,17 @@
+import { Providers } from './GlobalRedux/provider';
 import Navbar from './components/navbar/Navbar';
 import './globals.css'
-import { Oswald } from 'next/font/google'
+import { Inter} from 'next/font/google'
 
 export const metadata = {
   title: 'Артстом',
   description: 'Артстом',
 }
 
-const fontOswald = Oswald ({
+const fontInter = Inter({
   subsets: ["latin"],
-});
+  weight: '300'
+})
 
 
 export default function RootLayout({
@@ -19,9 +21,11 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={fontOswald.className + ' mx-auto'}>
-        <Navbar />
-        {children}
+      <body className={fontInter.className + ' mx-auto'}>
+        <Providers>
+          <Navbar />
+          {children}
+        </Providers>
       </body>
     </html>
   )

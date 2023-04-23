@@ -115,7 +115,7 @@ imageArr.push(<div
         width="48">
         <path d="M561 816 320 575l241-241 43 43-198 198 198 198-43 43Z"/>
       </svg>
-        <div className="container relative overflow-hidden w-[600px] h-[400px] rounded-2xl">
+        <div className="container relative overflow-hidden w-[600px] h-[400px] rounded-2xl z-0">
           <div className={`
                     flex transition-${isTransitionBlocked ? 'none' : 'all'} 
                     duration-${isTransitionBlocked ? '0' : '300'}}
