@@ -10,7 +10,7 @@ export const metadata = {
 
 const fontInter = Inter({
   subsets: ["latin"],
-  weight: '300'
+  weight: ['300', '500', '600', '700', '900']
 })
 
 
@@ -20,7 +20,7 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en">
+    <html lang="ru">
       <body className={fontInter.className + ' mx-auto'}>
         <Providers>
           <Navbar />

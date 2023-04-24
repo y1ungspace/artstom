@@ -19,10 +19,23 @@
 
 @layer components {
   body {
-    @apply bg-base-4 text-white
+    @apply bg-base-4 text-white overflow-x-hidden
+  }
+
+  html {
+    @apply max-w-full overflow-x-hidden
   }
 } 
 
+
 .burger {
   background: linear-gradient(257deg, rgba(18,109,144,1) 0%, rgba(28,172,228,1) 50%, rgba(28,178,228,0.6573004201680672) 100%);
+}
+
+.about {
+  background: linear-gradient(180deg, rgba(1,1,1,0) 0%, rgba(0,0,0,1) 40%, rgba(0,0,0,1) 100%);
+}
+
+.about-center {
+  background: radial-gradient(circle, rgba(18,111,147,1) 0%, rgba(25,19,37,1) 100%);
 }
