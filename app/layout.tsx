@@ -10,7 +10,7 @@ export const metadata = {
 
 const fontInter = Inter({
   subsets: ["latin"],
-  weight: ['300', '500', '600', '700', '900']
+  weight: ['100', '300', '500', '600', '700', '900']
 })
 
 

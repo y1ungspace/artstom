@@ -1,52 +1,74 @@
 'use client'
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
-const sliderArr = [
-  'bg-sky-400',
-  'bg-red-400',
-  'bg-yellow-400',
-  'bg-green-400',
-  'bg-gray-400',
+interface sliderElem {
+  keyValue: string,
+  id: number,
+}
+
+const sliderImages = [
+  1, 2, 3, 4, 5
 ]
 
 const Slider: React.FC = () => {
   const [currentSlide, setCurrentSlide] = useState(1);
+  const [images, setImages] = useState<JSX.Element[]>();
+  const [labels, setLabels] = useState<JSX.Element[]>();
   const [isTransitionBlocked, setIsTransitionBlocked] = useState(false);
   const [disabled, setDisabled] = useState(false);
+  
+  useEffect(() => {
 
-  const imageArr = [];
-  const labelArr = [];
+    const imageArr = () => sliderImages.map((x) => {
+      return(<ImageSlide keyValue={'image-slide-' + x} id={x} />)
+      }
+    )
+  
+    const labelArr = () => sliderImages.map((x) => {
+      return(<SlideLabel keyValue={'label-slide-' + x} id={x} />)
+      }
+    )
 
-  for (let i = 1; i <= sliderArr.length; i++) {
-    imageArr.push(<div 
-                    className={'container min-w-[600px] h-[400px] ' + sliderArr[i - 1]}
-                    key={'img' + i}
-    />)
-    labelArr.push(<label 
-                    htmlFor={'radio' + i} 
-                    className={`
-                      inline-block 
-                      w-2 min-h-[8px] 
-                      rounded-full 
-                      hover:bg-base-1
-                      ${currentSlide === i ? 
-                        'bg-base-1 animate-[slider_0.3s_ease-in-out_forwards]' : 
-                        'bg-base-3'}`}
-                    key={'radio' + i}
-                    onClick={() => setCurrentSlide(i)}
-                  >
-                  </label>)
+    const images = imageArr()
+
+    images.unshift(<ImageSlide keyValue={'image-slide-start'} id={5} />)
+    images.push(<ImageSlide keyValue={'label-slide-end'} id={1} />)
+
+    setImages(images)
+    setLabels(labelArr())
+
+  },[currentSlide])
+  
+  const ImageSlide: React.FC<sliderElem> = (props) => {
+    return(
+      <div 
+      className={'flex flex-row min-w-[600px] h-[400px]'}
+      key={props.keyValue}
+      >
+      <div className="bg-red-400 w-1/2 min-h-full"></div>
+      <div className="bg-yellow-300 w-1/2 min-h-full"></div>
+    </div>
+    )
   }
-
-imageArr.unshift(<div 
-  className={'container min-w-[600px] h-[400px] ' + sliderArr[4]}
-  key={'img5-forward'}
-/>)
-imageArr.push(<div 
-  className={'container min-w-[600px] h-[400px] ' + sliderArr[0]}
-  key={'img1-next'}
-/>)
+  
+  const SlideLabel: React.FC<sliderElem> = (props) => {
+    return(
+      <label 
+        htmlFor={props.keyValue} 
+        className={`
+        inline-block 
+        w-2 min-h-[8px] 
+        rounded-full 
+      hover:bg-base-1
+        ${currentSlide === props.id ? 
+        'bg-base-1 animate-[slider_0.3s_ease-in-out_forwards]' : 
+        'bg-base-3'}`}
+        id={'radio' + props.keyValue}
+        onClick={() => setCurrentSlide(props.id)}
+        ></label>
+      )
+  }
 
   function resetSlider(props: 'first' | 'last') {
 
@@ -117,16 +139,17 @@ imageArr.push(<div
       </svg>
         <div className="container relative overflow-hidden w-[600px] h-[400px] rounded-2xl z-0">
           <div className={`
-                    flex transition-${isTransitionBlocked ? 'none' : 'all'} 
-                    duration-${isTransitionBlocked ? '0' : '300'}}
+                    flex 
+                    transition-${isTransitionBlocked ? 'none' : 'all'} 
+                    duration-${isTransitionBlocked ? '0' : '300'}
                     w-[600px] 
-                    h-[400px] 
-                    -translate-x-[${currentSlide * 600}px]`
+                    h-[400px]
+                    slider-${currentSlide}`
                   }>
-           {imageArr}
+           {images}
           </div>
           <div className="absolute bottom-3 flex gap-3 justify-center w-[600px]">
-            {labelArr}
+            {labels}
           </div>
         </div>
         <svg 

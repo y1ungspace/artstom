@@ -26,7 +26,7 @@ const About: React.FC = () => {
           </div>
           <p className='text-xl font-medium opacity-80'> Наши навыки позволяют востановить красоту улыбки и здоровую функцию 
             зубо-челюстной системы. Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum, doloremque quas architecto repudiandae animi optio! Necessitatibus eum ipsum earum, maxime voluptatum sint, dolorem consequatur iure nesciunt, mollitia error perspiciatis? Voluptates. Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro eaque, doloremque iusto commodi nostrum natus, assumenda, iste officia ea beatae sunt quibusdam architecto tempora quo consequuntur saepe. Ullam, cupiditate excepturi?</p>
-          <div className='flex gap-20 mt-20'>
+          <div className='flex gap-20 mt-20 font-thin'>
             <button className='text-base-2'>{'Услуги >'}</button>
             <button className='text-base-2'>{'Цены >'}</button>
           </div>

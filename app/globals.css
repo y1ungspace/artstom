@@ -27,6 +27,27 @@
   }
 } 
 
+.slider-0 {
+  transform: translateX(0px);
+}
+.slider-1 {
+  transform: translateX(-600px);
+}
+.slider-2 {
+  transform: translateX(-1200px);
+}
+.slider-3 {
+  transform: translateX(-1800px);
+}
+.slider-4 {
+  transform: translateX(-2400px);
+}
+.slider-5 {
+  transform: translateX(-3000px);
+}
+.slider-6 {
+  transform: translateX(-3600px);
+}
 
 .burger {
   background: linear-gradient(257deg, rgba(18,109,144,1) 0%, rgba(28,172,228,1) 50%, rgba(28,178,228,0.6573004201680672) 100%);
