@@ -5,7 +5,7 @@ import Image from 'next/image'
 
 const fontInter = Inter({
   subsets: ['cyrillic'],
-  weight: '600',
+  weight: ['300', '500', '600'],
 })
 
 const About: React.FC = () => {
@@ -27,8 +27,8 @@ const About: React.FC = () => {
           <p className='text-xl font-medium opacity-80'> Наши навыки позволяют востановить красоту улыбки и здоровую функцию 
             зубо-челюстной системы. Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum, doloremque quas architecto repudiandae animi optio! Necessitatibus eum ipsum earum, maxime voluptatum sint, dolorem consequatur iure nesciunt, mollitia error perspiciatis? Voluptates. Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro eaque, doloremque iusto commodi nostrum natus, assumenda, iste officia ea beatae sunt quibusdam architecto tempora quo consequuntur saepe. Ullam, cupiditate excepturi?</p>
           <div className='flex gap-20 mt-20 font-thin'>
-            <button className='text-base-2'>{'Услуги >'}</button>
-            <button className='text-base-2'>{'Цены >'}</button>
+            <button className='text-base-2 font-light' style={{fontWeight: 300}}>{'Услуги >'}</button>
+            <button className='text-base-2 font-light' style={{fontWeight: 300}}>{'Цены >'}</button>
           </div>
         </div>
       </div>

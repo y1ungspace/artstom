@@ -2946,6 +2946,32 @@
         "async": false
       }
     },
+    "(app-client)/./app/lib/sliderImages.ts": {
+      "*": {
+        "id": "(sc_client)/./app/lib/sliderImages.ts",
+        "name": "*",
+        "chunks": [
+          "app/page:app/page"
+        ],
+        "async": false
+      },
+      "": {
+        "id": "(sc_client)/./app/lib/sliderImages.ts",
+        "name": "",
+        "chunks": [
+          "app/page:app/page"
+        ],
+        "async": false
+      },
+      "getStaticProps": {
+        "id": "(sc_client)/./app/lib/sliderImages.ts",
+        "name": "getStaticProps",
+        "chunks": [
+          "app/page:app/page"
+        ],
+        "async": false
+      }
+    },
     "(app-client)/./node_modules/next/dist/client/image.js": {
       "*": {
         "id": "(sc_client)/./node_modules/next/dist/client/image.js",
@@ -9773,7 +9799,7 @@
       ],
       "async": false
     },
-    "/Users/bessonovnikita/Documents/GitHub/artstom/node_modules/next/font/google/target.css?{\"path\":\"app/components/home/About.tsx\",\"import\":\"Inter\",\"arguments\":[{\"subsets\":[\"cyrillic\"],\"weight\":\"600\"}],\"variableName\":\"fontInter\"}#": {
+    "/Users/bessonovnikita/Documents/GitHub/artstom/node_modules/next/font/google/target.css?{\"path\":\"app/components/home/About.tsx\",\"import\":\"Inter\",\"arguments\":[{\"subsets\":[\"cyrillic\"],\"weight\":[\"300\",\"500\",\"600\"]}],\"variableName\":\"fontInter\"}#": {
       "id": "null",
       "name": "default",
       "chunks": [
@@ -9830,6 +9856,30 @@
     "/Users/bessonovnikita/Documents/GitHub/artstom/app/components/home/Slider.tsx#default": {
       "id": "(app-client)/./app/components/home/Slider.tsx",
       "name": "default",
+      "chunks": [
+        "app/page:app/page"
+      ],
+      "async": false
+    },
+    "/Users/bessonovnikita/Documents/GitHub/artstom/app/lib/sliderImages.ts": {
+      "id": "(app-client)/./app/lib/sliderImages.ts",
+      "name": "*",
+      "chunks": [
+        "app/page:app/page"
+      ],
+      "async": false
+    },
+    "/Users/bessonovnikita/Documents/GitHub/artstom/app/lib/sliderImages.ts#": {
+      "id": "(app-client)/./app/lib/sliderImages.ts",
+      "name": "",
+      "chunks": [
+        "app/page:app/page"
+      ],
+      "async": false
+    },
+    "/Users/bessonovnikita/Documents/GitHub/artstom/app/lib/sliderImages.ts#getStaticProps": {
+      "id": "(app-client)/./app/lib/sliderImages.ts",
+      "name": "getStaticProps",
       "chunks": [
         "app/page:app/page"
       ],

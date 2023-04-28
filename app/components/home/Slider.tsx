@@ -1,15 +1,9 @@
 'use client'
 
+import { getStaticProps } from "@/app/lib/sliderImages";
+import { sliderElem } from "@/app/variables/Interfaces";
 import { useEffect, useState } from "react";
-
-interface sliderElem {
-  keyValue: string,
-  id: number,
-}
-
-const sliderImages = [
-  1, 2, 3, 4, 5
-]
+import Image from "next/image";
 
 const Slider: React.FC = () => {
   const [currentSlide, setCurrentSlide] = useState(1);
@@ -19,35 +13,40 @@ const Slider: React.FC = () => {
   const [disabled, setDisabled] = useState(false);
   
   useEffect(() => {
-
-    const imageArr = () => sliderImages.map((x) => {
-      return(<ImageSlide keyValue={'image-slide-' + x} id={x} />)
-      }
-    )
-  
-    const labelArr = () => sliderImages.map((x) => {
-      return(<SlideLabel keyValue={'label-slide-' + x} id={x} />)
-      }
-    )
-
-    const images = imageArr()
-
-    images.unshift(<ImageSlide keyValue={'image-slide-start'} id={5} />)
-    images.push(<ImageSlide keyValue={'label-slide-end'} id={1} />)
-
-    setImages(images)
-    setLabels(labelArr())
+      getStaticProps().then((data) => {
+        const sliderImages = data.props.data;
+       
+        const imageArr = () => sliderImages.map((x) => {
+          console.log(x.urlAfter)
+          return(<ImageSlide keyValue={'image-slide-' + x.id} id={x.id} name={x.name} urlBefore={x.urlBefore} urlAfter={x.urlAfter} />)
+          }
+        )
+      
+        const labelArr = () => sliderImages.map((x) => {
+          return(<SlideLabel keyValue={'label-slide-' + x.id} id={x.id} name={""} urlBefore={""} urlAfter={""} />)
+          }
+        )
+    
+        const images = imageArr()
+    
+        images.unshift(<ImageSlide keyValue={'image-slide-start'} id={5} name={sliderImages[4].name} urlBefore={sliderImages[4].urlBefore} urlAfter={sliderImages[4].urlBefore} />)
+        images.push(<ImageSlide keyValue={'label-slide-end'} id={1} name={sliderImages[0].name} urlBefore={sliderImages[0].urlBefore} urlAfter={sliderImages[0].urlAfter} />)
+    
+        setImages(images)
+        setLabels(labelArr())
+      });
 
   },[currentSlide])
   
   const ImageSlide: React.FC<sliderElem> = (props) => {
     return(
       <div 
-      className={'flex flex-row min-w-[600px] h-[400px]'}
+      className={'flex flex-col min-w-[600px] h-[400px]'}
       key={props.keyValue}
       >
-      <div className="bg-red-400 w-1/2 min-h-full"></div>
-      <div className="bg-yellow-300 w-1/2 min-h-full"></div>
+      <Image className="w-[600px] h-[200px]" src={props.urlBefore} alt={props.name + ' before'} width={2000} height={1000} style={{objectFit:"cover"}} />
+      <Image className="w-[600px] h-[200px]" src={props.urlAfter} alt={props.name + ' after'} width={2000} height={1000} style={{objectFit:"cover"}} />
+      
     </div>
     )
   }
@@ -173,3 +172,5 @@ const Slider: React.FC = () => {
 }
 
 export default Slider
+
+
