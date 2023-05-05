@@ -24,8 +24,7 @@ const About: React.FC = () => {
             <h3 className='opacity-80'>Вот уже 15 лет я занимаюсь любимым делом, </h3>
             <p className='opacity-100'>моя цель – идеальная улыбка.</p>
           </div>
-          <p className='text-xl font-medium opacity-80'> Наши навыки позволяют востановить красоту улыбки и здоровую функцию 
-            зубо-челюстной системы. Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum, doloremque quas architecto repudiandae animi optio! Necessitatibus eum ipsum earum, maxime voluptatum sint, dolorem consequatur iure nesciunt, mollitia error perspiciatis? Voluptates. Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro eaque, doloremque iusto commodi nostrum natus, assumenda, iste officia ea beatae sunt quibusdam architecto tempora quo consequuntur saepe. Ullam, cupiditate excepturi?</p>
+          <p className='text-xl font-medium opacity-80'> Мы выполним комплексную работу по диагностике состояния височно-нижнечелюстного сустава жевательных мышц, лечению зубов и  протезированию.Наши знания и навыки позволяют восстановить красоту улыбки , здоровую функцию мышц , височно-нижнечелюстного сустава и функциональную анатомию зубов.Мы специализируемся на высокоэстетичном протезировании тонкими накладками и винирами E-max.</p>
           <div className='flex gap-20 mt-20 font-thin'>
             <button className='text-base-2 font-light' style={{fontWeight: 300}}>{'Услуги >'}</button>
             <button className='text-base-2 font-light' style={{fontWeight: 300}}>{'Цены >'}</button>

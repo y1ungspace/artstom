@@ -25,7 +25,7 @@ export default function Home() {
         <div className={fontInter.className + ' flex justify-between  w-[1248px] py-36 mx-auto'}>
           <div className='w-2/5'>
             <h1 className='text-5xl my-11'>Ваша улыбка заслуживает внимания</h1>
-            <h3 className='text-xl'>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dicta expedita ab magni vero voluptatum quas natus alias dolorum minima, cumque placeat itaque aliquid omnis.</h3>
+            <h3 className='text-xl'>Не что так не радует стоматолога, как вид вашей обновлненной улыбки. Позвольте себе долгосрочную инвестицию в красоту и здоровье которая никогда не обесценится, улучшит ваш образ, облегчит общение и принесет много положительных эмоций!</h3>
           </div>
           <Slider />
         </div>
