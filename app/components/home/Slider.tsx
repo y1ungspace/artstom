@@ -18,19 +18,38 @@ const Slider: React.FC = () => {
        
         const imageArr = () => sliderImages.map((x) => {
           console.log(x.urlAfter)
-          return(<ImageSlide keyValue={'image-slide-' + x.id} id={x.id} name={x.name} urlBefore={x.urlBefore} urlAfter={x.urlAfter} />)
+          return(<ImageSlide 
+                    keyValue={'image-slide-' + x.id} 
+                    id={x.id} name={x.name} 
+                    urlBefore={x.urlBefore} 
+                    urlAfter={x.urlAfter} 
+                  />)
           }
         )
       
         const labelArr = () => sliderImages.map((x) => {
-          return(<SlideLabel keyValue={'label-slide-' + x.id} id={x.id} name={""} urlBefore={""} urlAfter={""} />)
+          return(<SlideLabel 
+                    keyValue={'label-slide-' + x.id} 
+                    id={x.id} name={""} 
+                    urlBefore={""}
+                    urlAfter={""} />)
           }
         )
     
         const images = imageArr()
     
-        images.unshift(<ImageSlide keyValue={'image-slide-start'} id={5} name={sliderImages[4].name} urlBefore={sliderImages[4].urlBefore} urlAfter={sliderImages[4].urlBefore} />)
-        images.push(<ImageSlide keyValue={'label-slide-end'} id={1} name={sliderImages[0].name} urlBefore={sliderImages[0].urlBefore} urlAfter={sliderImages[0].urlAfter} />)
+        images.unshift(<ImageSlide 
+                          keyValue={'image-slide-start'} 
+                          id={5} name={sliderImages[4].name} 
+                          urlBefore={sliderImages[4].urlBefore} 
+                          urlAfter={sliderImages[4].urlBefore} 
+                        />)
+        images.push(<ImageSlide 
+                      keyValue={'label-slide-end'} 
+                      id={1} name={sliderImages[0].name} 
+                      urlBefore={sliderImages[0].urlBefore} 
+                      urlAfter={sliderImages[0].urlAfter} 
+                    />)
     
         setImages(images)
         setLabels(labelArr())
@@ -44,8 +63,21 @@ const Slider: React.FC = () => {
       className={'flex flex-col min-w-[600px] h-[400px]'}
       key={props.keyValue}
       >
-      <Image className="w-[600px] h-[200px]" src={props.urlBefore} alt={props.name + ' before'} width={2000} height={1000} style={{objectFit:"cover"}} />
-      <Image className="w-[600px] h-[200px]" src={props.urlAfter} alt={props.name + ' after'} width={2000} height={1000} style={{objectFit:"cover"}} />
+      <Image 
+        className="w-[600px] h-[200px]" 
+        src={props.urlBefore} 
+        alt={props.name + ' before'} 
+        width={2000} 
+        height={1000} 
+        style={{objectFit:"cover"}} 
+      />
+      <Image 
+        className="w-[600px] h-[200px]" 
+        src={props.urlAfter} 
+        alt={props.name + ' after'} 
+        width={2000} height={1000} 
+        style={{objectFit:"cover"}} 
+    />
       
     </div>
     )

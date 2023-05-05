@@ -34,3 +34,8 @@ export interface sliderApiRespnose {
   urlAfter: string,
   id: number,
 }
+
+export interface ISlider {
+  width: number,
+  height: number,
+}
