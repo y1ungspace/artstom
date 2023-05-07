@@ -16,8 +16,8 @@ const Purposes: React.FC = () => {
           height={40}
         />
         <div>
-          <h1 className="text-xl py-2">{props.title}</h1>
-          <p className="text-sm">{props.description}</p>
+          <h1 className="text-xl font-medium py-2">{props.title}</h1>
+          <p className="text-sm opacity-80">{props.description}</p>
         </div>
       </div>
     )
@@ -28,8 +28,8 @@ const Purposes: React.FC = () => {
   ))
  
   return(   
-    <div className="bg-gray-700 w-[calc(100%_-_50px)] mx-auto rounded-3xl px-32 py-16">
-      <h1 className="text-3xl pb-8">Еще 8 причин по которым стоит к нам обратиться</h1>
+    <div className="bg-gray-700 w-[calc(100%_-_50px)] mx-auto rounded-3xl px-32 py-12">
+      <h1 className="text-3xl pb-8 font-medium">Ещё 8 причин по которым стоит к нам обратиться</h1>
       <div className="grid grid-cols-2 gap-6">
         {purposes}
       </div>
