@@ -39,3 +39,8 @@ export interface ISlider {
   width: number,
   height: number,
 }
+
+export interface IPurpose {
+  title: string,
+  description: string
+}

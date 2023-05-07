@@ -4,6 +4,8 @@ import { Inter } from 'next/font/google'
 import Slider from './components/home/Slider'
 import About from './components/home/About'
 import Carousel from './components/home/Carousel'
+import Location from './components/home/Location'
+import Purposes from './components/home/Purposes'
 
 const fontInter = Inter({
   subsets: ["latin"],
@@ -34,6 +36,9 @@ export default function Home() {
       <div className='flex w-[calc(100%_-_50px)] mt-10 mx-auto bg-red-100 rounded-3xl'>
         <Carousel width={width} height={500} images={imagesArray} />
       </div>
+      {/* <OurWork /> */}
+      {/* <Location /> */}
+      <Purposes />
     </>
   )
 } 
