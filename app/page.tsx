@@ -1,4 +1,4 @@
-'use client'
+'use client';
 
 import { Inter } from 'next/font/google'
 import Slider from './components/home/Slider'
@@ -6,6 +6,7 @@ import About from './components/home/About'
 import Carousel from './components/home/Carousel'
 import Location from './components/home/Location'
 import Purposes from './components/home/Purposes'
+import { getScreenWidth } from './getScreenWidth'
 
 const fontInter = Inter({
   subsets: ["latin"],
@@ -18,7 +19,7 @@ const imagesArray = [
   'https://www.dropbox.com/s/t1qpiys4f86v8jf/IMG_8822.jpg?raw=1',
 ]
 
-const width = window.screen.width;
+const width = getScreenWidth()
 
 export default function Home() {
   return (
