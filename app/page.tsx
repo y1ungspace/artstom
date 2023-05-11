@@ -35,10 +35,14 @@ export default function Home() {
         </div>
       </section>
       <About />
-      <div className='flex w-[calc(100%_-_50px)] mt-10 mx-auto bg-red-100 rounded-3xl'>
-        <Carousel width={width} height={500} images={imagesArray} />
-      </div>
       <Block3 />
+      <div className='flex w-[calc(100%_-_50px)] mt-10 mx-auto rounded-3xl'>
+        <div className='flex flex-col justify-center pl-20'>
+          <h1 className='text-4xl font-bold'>Title</h1>
+          <h3 className='font-medium'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum, non dolores, harum beatae, aspernatur tempore facere dignissimos atque velit dolore mollitia? Optio quibusdam mollitia modi quia accusamus dignissimos voluptatibus sed?</h3>
+        </div>
+        <Carousel width={700} height={500} images={imagesArray} />
+      </div>
       <Location />
       <Purposes />
     </>

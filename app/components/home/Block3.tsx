@@ -34,7 +34,7 @@ const Block3: React.FC = () => {
   }
 
   return(
-    <section className='w-[calc(100%_-_50px)] p-16 mx-auto rounded-3xl bg-sky-800'>
+    <section className='w-[calc(100%_-_50px)] p-16 mx-auto mt-16 rounded-3xl block-3-gradient pb-32'>
       <h1 className='text-6xl font-bold'>Как мы работаем</h1>
       <h3 className='component w-[550px] text-xl opacity-80'>Уделяем повышенное внимание эстетике и профилактике: Мы уверены и постоянно доказываем на практике, что даже простую пломбу можно поставить красиво – так, чтобы она приближала улыбку к идеалу.</h3>
       <div>
