@@ -7,6 +7,7 @@ import Carousel from './components/home/Carousel'
 import Location from './components/home/Location'
 import Purposes from './components/home/Purposes'
 import { getScreenWidth } from './getScreenWidth'
+import Block3 from './components/home/Block3';
 
 const fontInter = Inter({
   subsets: ["latin"],
@@ -27,7 +28,7 @@ export default function Home() {
       <section className='bg-background bg-cover h-[1000px]'>
         <div className={fontInter.className + ' flex justify-between  w-[1248px] py-36 mx-auto'}>
           <div className='w-2/5'>
-            <h1 className='text-5xl my-11'>Ваша улыбка заслуживает внимания</h1>
+            <h1 className='text-5xl font-medium my-11'>Ваша улыбка заслуживает внимания</h1>
             <h3 className='text-xl'>Не что так не радует стоматолога, как вид вашей обновлненной улыбки. Позвольте себе долгосрочную инвестицию в красоту и здоровье которая никогда не обесценится, улучшит ваш образ, облегчит общение и принесет много положительных эмоций!</h3>
           </div>
           <Slider />
@@ -37,8 +38,8 @@ export default function Home() {
       <div className='flex w-[calc(100%_-_50px)] mt-10 mx-auto bg-red-100 rounded-3xl'>
         <Carousel width={width} height={500} images={imagesArray} />
       </div>
-      {/* <OurWork /> */}
-      {/* <Location /> */}
+      <Block3 />
+      <Location />
       <Purposes />
     </>
   )

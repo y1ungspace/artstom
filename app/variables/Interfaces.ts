@@ -44,3 +44,9 @@ export interface IPurpose {
   title: string,
   description: string
 }
+
+export interface IBlock3Paragraph {
+  img: string,
+  text: string,
+  id: number,
+}

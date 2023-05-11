@@ -1,5 +1,8 @@
 'use client';
 
 export function getScreenWidth() {
-  return window.screen.width
-}
+  if (typeof window !== 'undefined') {
+    return window.screen.width
+  }
+  return 1440 //defalut
+} 

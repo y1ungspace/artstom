@@ -1,8 +1,24 @@
 const Location: React.FC = () => {
   return(
-    <>
-      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d144.04045211523572!2d20.43280022242356!3d54.71582933153718!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46e33dc9b244fed1%3A0x227e477548ecb034!2sUlitsa%20Serzhanta%20Mishina%2C%2022%D0%90%2C%20Kaliningrad%2C%20Kaliningradskaya%20oblast&#39;%2C%20236010!5e0!3m2!1sfr!2sru!4v1683313237490!5m2!1sfr!2sru" width="1200" height="400" loading="lazy"></iframe>
-    </>
+    <section className='w-[1100px] mx-auto rounded-3xl bg-black text-center'>
+      <h1 className="text-4xl font-bold">До нас легко добраться</h1>
+      <h3 className="text-lg font-medium opacity-80 w-[700px] mx-auto pb-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo quis dolores ab animi esse? Facere molestiae, voluptates repudiandae sapiente ut sit aliquid, quos libero, atque distinctio recusandae dolore eius illum?</h3>
+      <div style={{position: 'relative', overflow: 'hidden'}}>
+        <a 
+          href="https://yandex.ru/maps/org/artstom/27705467946/?utm_medium=mapframe&utm_source=maps" 
+          style={{color: '#eee', fontSize: '12px', position: 'absolute', top: '0px'}}
+          >
+        </a>
+        <iframe 
+          className="w-full rounded-3xl"
+          src="https://yandex.ru/map-widget/v1/?ll=20.433009%2C54.715916&mode=search&oid=27705467946&ol=biz&z=17" 
+          width="1200" 
+          height="400"  
+          style={{position: "relative"}}
+          >
+        </iframe>
+      </div>
+    </section>
   )
 }
 
