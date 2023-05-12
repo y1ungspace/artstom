@@ -19,7 +19,7 @@ const nextConfig = {
       },
       {
         protocol: 'https',
-        hostname: 'artstom.vercel.app',
+        hostname: 'https://artstom.vercel.app',
         port: '',
         pathname: '/_next/**',
       },
