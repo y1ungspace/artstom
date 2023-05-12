@@ -10,7 +10,7 @@ const Block3: React.FC = () => {
         {props.id % 2 === 0 ? 
           <>
             <p>{props.text}</p>
-            <Image 
+            <img
               className='custom-border-radius--reverted '
               alt=""
               src={props.img}
