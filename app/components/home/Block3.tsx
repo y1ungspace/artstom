@@ -13,7 +13,7 @@ const Block3: React.FC = () => {
             <Image 
               className='custom-border-radius--reverted '
               alt=""
-              src={'https://www.dropbox.com/s/d4ow07p8tg18sho/31.jpg?raw=1'}
+              src={props.img}
               width={500}
               height={500}
               />
