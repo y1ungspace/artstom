@@ -63,7 +63,7 @@ const Slider: React.FC = () => {
       className={'flex flex-col min-w-[600px] h-[400px]'}
       key={props.keyValue}
       >
-      <Image 
+      <img 
         className="w-[600px] h-[200px]" 
         src={props.urlBefore} 
         alt={props.name + ' before'} 
@@ -71,7 +71,7 @@ const Slider: React.FC = () => {
         height={1000} 
         style={{objectFit:"cover"}} 
       />
-      <Image 
+      <img 
         className="w-[600px] h-[200px]" 
         src={props.urlAfter} 
         alt={props.name + ' after'} 

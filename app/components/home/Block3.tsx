@@ -1,4 +1,3 @@
-import Image from 'next/image'
 import { IBlock3Paragraph } from "@/app/variables/Interfaces"
 import Block3Data from '@/app/lib/Block3Data'
 
@@ -19,7 +18,7 @@ const Block3: React.FC = () => {
               />
           </> :
           <>
-            <Image 
+            <img 
               className='custom-border-radius '
               alt=""
               src={props.img}

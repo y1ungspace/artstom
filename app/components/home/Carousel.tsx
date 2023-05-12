@@ -42,7 +42,7 @@ const Carousel = ({ width, height, images }: CarouselProps) => {
       </svg>
       </button>
       <div className={`relative flex items-center justify-center w-[${width}px] h-[${height}px]`}>
-        <Image
+        <img
           src={images[currentImage]}
           alt={`Image ${currentImage + 1}`}
           width={width}
