@@ -3,7 +3,7 @@
 import BurgerMenu from "./BurgerMenu"
 import Contacts from "./Contacts"
 import Divider from "./Divider"
-import Logo from "./Logo"
+import Logo from "../Logo"
 import MenuButton from "./MenuButton"
 import Title from "./Title"
 

@@ -6,7 +6,6 @@ import About from './components/home/About'
 import Carousel from './components/home/Carousel'
 import Location from './components/home/Location'
 import Purposes from './components/home/Purposes'
-import { getScreenWidth } from './getScreenWidth'
 import Block3 from './components/home/Block3';
 
 const fontInter = Inter({
@@ -19,8 +18,6 @@ const imagesArray = [
   'https://www.dropbox.com/s/k2gppwmyt7bnjpl/IMG_8835.jpg?raw=1',
   'https://www.dropbox.com/s/t1qpiys4f86v8jf/IMG_8822.jpg?raw=1',
 ]
-
-const width = getScreenWidth()
 
 export default function Home() {
   return (
