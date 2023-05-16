@@ -1,12 +1,12 @@
 'use client';
 
 import { Inter } from 'next/font/google'
-import Slider from './components/home/Slider'
-import About from './components/home/About'
-import Carousel from './components/home/Carousel'
-import Location from './components/home/Location'
-import Purposes from './components/home/Purposes'
-import Block3 from './components/home/Block3';
+import Slider from '../../components/home/Slider'
+import About from '../../components/home/About'
+import Carousel from '../../components/home/Carousel'
+import Location from '../../components/home/Location'
+import Purposes from '../../components/home/Purposes'
+import Block3 from '../../components/home/Block3';
 
 const fontInter = Inter({
   subsets: ["latin"],

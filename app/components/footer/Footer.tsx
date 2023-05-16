@@ -24,11 +24,11 @@ const Footer: React.FC = () => {
           </div>  
         </div>
         <div className="flex justify-between grow ml-auto">
-          <button type="button" className="py-1 text-left hover:text-base-1">Услуги</button>
-          <button type="button" className="py-1 text-left hover:text-base-1">Цены</button>
-          <button type="button" className="py-1 text-left hover:text-base-1">Специалисты</button>
-          <button type="button" className="py-1 text-left hover:text-base-1">Галерея</button>
-          <button type="button" className="py-1 text-left hover:text-base-1">Контакты</button>
+          <a href="/pages/services" className="py-1 text-left hover:text-base-1">Услуги</a>
+          <a href="/pages/prices" className="py-1 text-left hover:text-base-1">Цены</a>
+          <a href="/pages/specialists" className="py-1 text-left hover:text-base-1">Специалисты</a>
+          <a href="/pages/gallery" className="py-1 text-left hover:text-base-1">Галерея</a>
+          <a href="/pages/contacts" className="py-1 text-left hover:text-base-1">Контакты</a>
         </div>
       </div>
     </section>
