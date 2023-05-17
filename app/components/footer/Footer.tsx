@@ -10,6 +10,14 @@ const Footer: React.FC = () => {
         <h1 className="text-xl">Потапкин Артём Владленович</h1>
       </div>
       <div className="flex min-w-[calc(100%_-_300px)] gap-20 mt-8">
+        <div className="flex justify-between items-center grow ml-auto">
+          <a href="/pages/services" className="py-1 text-left hover:text-base-1">Услуги</a>
+          <a href="/pages/prices" className="py-1 text-left hover:text-base-1">Цены</a>
+          <a href="/pages/specialists" className="py-1 text-left hover:text-base-1">Специалисты</a>
+          <a href="/pages/gallery" className="py-1 text-left hover:text-base-1">Галерея</a>
+          <a href="/pages/contacts" className="py-1 text-left hover:text-base-1">Контакты</a>
+        </div>
+        <div className="w-0.5 bg-base-3/50"></div>
         <div className="flex flex-col self-start w-[350px]">
           <h1 className="py-0.5 hover:text-base-1">Артстом</h1>
           <a 
@@ -22,13 +30,6 @@ const Footer: React.FC = () => {
           <div className="flex gap-3">
             <SocialButtons />
           </div>  
-        </div>
-        <div className="flex justify-between grow ml-auto">
-          <a href="/pages/services" className="py-1 text-left hover:text-base-1">Услуги</a>
-          <a href="/pages/prices" className="py-1 text-left hover:text-base-1">Цены</a>
-          <a href="/pages/specialists" className="py-1 text-left hover:text-base-1">Специалисты</a>
-          <a href="/pages/gallery" className="py-1 text-left hover:text-base-1">Галерея</a>
-          <a href="/pages/contacts" className="py-1 text-left hover:text-base-1">Контакты</a>
         </div>
       </div>
     </section>
