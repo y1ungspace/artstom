@@ -14,6 +14,10 @@ module.exports = {
         'background': 'url("../public/images/background.jpg")',
         'gradient-conic':
           'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
+        'servises': 'url("../public/images/servises-background.svg")'
+      },
+      boxShadow:{
+        'white': 'box-shadow: 0 0 20px 0px rgba(256, 256, 256, 0.35)'
       },
       colors: {
         base: {
@@ -22,6 +26,9 @@ module.exports = {
           3: '#3E3E3E', //gray
           4: '#010101', //black
         },
+      },
+      dropShadow: {
+        'white': 'filter: drop-shadow(0 20px 13px rgb(256 256 256 / 0.03)) drop-shadow(0 8px 5px rgb(256 256 256 / 0.08))'
       },
       height: {
         100: '100px',
