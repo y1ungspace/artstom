@@ -1,6 +1,6 @@
 const Location: React.FC = () => {
   return(
-    <section className='w-[1100px] mx-auto rounded-3xl bg-black text-center mt-32'>
+    <section className='w-[1100px] mx-auto rounded-3xl bg-base-4 text-center mt-32'>
       <h1 className="text-4xl font-bold">До нас легко добраться</h1>
       <h3 className="text-lg font-medium opacity-80 w-[700px] mx-auto pb-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo quis dolores ab animi esse? Facere molestiae, voluptates repudiandae sapiente ut sit aliquid, quos libero, atque distinctio recusandae dolore eius illum?</h3>
       <div style={{position: 'relative', overflow: 'hidden'}}>
