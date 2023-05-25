@@ -21,10 +21,10 @@ module.exports = {
       },
       colors: {
         base: {
-          1: '#FFFFFF', //white
+          1: '#010101', //black
           2: '#1CACE4', //blue
           3: '#3E3E3E', //gray
-          4: '#010101', //black
+          4: '#FFFFFF', //white
           5: '#167C9F', //dark blue
         },
       },

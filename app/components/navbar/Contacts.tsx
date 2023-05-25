@@ -8,8 +8,20 @@ const fontInter = Inter({
 
 const Contacts: React.FC = () => {
   return(
-    <div className={"flex justify-around items-center gap-3 " + fontInter.className}>
-      <a className="hover:text-base-2" href="tel:89114536362">8(911)453-63-62</a>
+    <div className={"flex justify-around items-center gap-3"}>
+      <a className="
+          text-xs 
+          font-medium
+          uppercase
+          border-[0.5px]
+          border-base-1
+          p-4
+          rounded-lg
+          duration-300
+          hover:bg-base-5
+          hover:border-base-5
+          hover:text-base-4
+      " href="tel:89114536362">Позвонить</a>
     </div>
   )
 }
