@@ -10,7 +10,7 @@ const Block3: React.FC = () => {
           <>
             <p>{props.text}</p>
             <img
-              className='custom-border-radius--reverted '
+              className='rounded-3xl'
               alt=""
               src={props.img}
               width={500}
@@ -19,7 +19,7 @@ const Block3: React.FC = () => {
           </> :
           <>
             <img 
-              className='custom-border-radius '
+              className='rounded-3xl'
               alt=""
               src={props.img}
               width={500}
@@ -33,7 +33,7 @@ const Block3: React.FC = () => {
   }
 
   return(
-    <section className='w-[calc(100%_-_50px)] p-16 mx-auto mt-16 rounded-3xl block-3-gradient pb-32'>
+    <section className='w-[calc(100%_-_50px)] p-16 mx-auto mt-16 rounded-3xl pb-32'>
       <h1 className='text-6xl font-bold'>Как мы работаем</h1>
       <h3 className='component w-[550px] text-xl opacity-80'>Уделяем повышенное внимание эстетике и профилактике: Мы уверены и постоянно доказываем на практике, что даже простую пломбу можно поставить красиво – так, чтобы она приближала улыбку к идеалу.</h3>
       <div>
