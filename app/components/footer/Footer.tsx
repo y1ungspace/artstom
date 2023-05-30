@@ -1,3 +1,5 @@
+'use client'
+
 import Logo from "../Logo"
 import SocialButtons from "../SocialsButtons"
 
@@ -5,7 +7,7 @@ const Footer: React.FC = () => {
   return(
     <section className="flex flex-col items-center text-base-1/90 mt-16 mb-8" >
       <div className="flex flex-col items-center gap-2">
-        <Logo />
+        {/* <Logo /> */}
         <div className="w-[200px] min-h-[1px] bg-base-1" />
         <h1 className="text-xl">Потапкин Артём Владленович</h1>
       </div>

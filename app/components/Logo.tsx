@@ -1,14 +1,15 @@
-'use client';
+'use client'
 
 import Image from "next/image";
 import { useRouter } from "next/navigation";
+import { useState } from "react";
 
 const Logo: React.FC = () => {
 
-  const router = useRouter();
+  const router = useRouter()
 
   return(
-    <div className="flex flex-col items-center">
+    <div className="flex flex-col items-center scale-100 transition-all">
       <Image
         onClick={() => router.push('/pages/home')}
         className="hidden md:block cursor-pointer p-1" 

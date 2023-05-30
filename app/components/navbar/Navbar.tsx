@@ -8,12 +8,26 @@ import MenuButton from "./MenuButton"
 import Title from "./Title"
 import Links from "./Links"
 import Subtitle from "./Subtitle"
+import { useState } from "react"
 
 const Navbar: React.FC = () => {
+
+  const [topPosition, setTopPosition] = useState(0)
+
+  window.onscroll = () => setTopPosition(window.scrollY)
+
   return(
-    <section className="flex justify-between items-center px-8 py-1 fixed top-0 bg-base-4 backdrop-blur-sm w-full z-10 drop-shadow-lg">
+    <section className={
+      topPosition > 50 ? 
+      "flex justify-between items-center px-8 py-3 fixed top-0 bg-base-4 w-full z-10 drop-shadow-lg transition-all" : 
+      "flex justify-between items-center px-8 py-8 fixed top-0 w-full z-10 transition-all"
+      }>
       <Links />
-      <div className="flex items-center gap-4">
+      <div className={
+      topPosition > 50 ? 
+      "flex items-center scale-[0.8] transition-all" : 
+      "flex items-center scale-100 transition-all"
+      }>
         <Logo />
         {/* <Divider />
         <Title /> */}
