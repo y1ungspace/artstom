@@ -14,7 +14,9 @@ const Navbar: React.FC = () => {
 
   const [topPosition, setTopPosition] = useState(0)
 
-  window.onscroll = () => setTopPosition(window.scrollY)
+  if (typeof window !== "undefined") {
+    window.onscroll = () => setTopPosition(window.scrollY)
+  }
 
   return(
     <section className={

@@ -38,7 +38,7 @@ const Block3: React.FC = () => {
       <h3 className='component w-[550px] text-xl opacity-80'>Уделяем повышенное внимание эстетике и профилактике: Мы уверены и постоянно доказываем на практике, что даже простую пломбу можно поставить красиво – так, чтобы она приближала улыбку к идеалу.</h3>
       <div>
         {Block3Data.map((elem) => 
-          <Paragraph id={elem.id} text={elem.text} img={elem.img} />
+          <Paragraph id={elem.id} key={elem.id} text={elem.text} img={elem.img} />
         )}
       </div>
     </section>
