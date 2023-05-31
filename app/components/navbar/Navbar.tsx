@@ -18,13 +18,13 @@ const Navbar: React.FC = () => {
 
   return(
     <section className={
-      topPosition > 50 ? 
+      topPosition > 30 ? 
       "flex justify-between items-center px-8 py-3 fixed top-0 bg-base-4 w-full z-10 drop-shadow-lg transition-all" : 
       "flex justify-between items-center px-8 py-8 fixed top-0 w-full z-10 transition-all"
       }>
       <Links />
       <div className={
-      topPosition > 50 ? 
+      topPosition > 30 ? 
       "flex items-center scale-[0.8] transition-all" : 
       "flex items-center scale-100 transition-all"
       }>

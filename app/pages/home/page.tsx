@@ -7,6 +7,8 @@ import Carousel from '../../components/home/Carousel'
 import Location from '../../components/home/Location'
 import Purposes from '../../components/home/Purposes'
 import Block3 from '../../components/home/Block3';
+import Logo from '@/app/components/Logo';
+import Image from 'next/image'
 
 const fontInter = Inter({
   subsets: ["latin"],
@@ -22,13 +24,22 @@ const imagesArray = [
 export default function Home() {
   return (
     <>
-      <section className='h-[1000px]'>
-        <div className={fontInter.className + ' flex justify-between  w-[1248px] py-36 mx-auto'}>
-          <div className='w-2/5'>
-            <h1 className='text-5xl font-medium my-11'>Ваша улыбка заслуживает внимания</h1>
-            <h3 className='text-xl'>Не что так не радует стоматолога, как вид вашей обновлненной улыбки. Позвольте себе долгосрочную инвестицию в красоту и здоровье которая никогда не обесценится, улучшит ваш образ, облегчит общение и принесет много положительных эмоций!</h3>
+      <section className='top-background-radius relative scale-110  bg-pastel-1 overflow-hidden'>
+        <div className='absolute bottom-[200px] right-[550px] scale-[7] blur-[0.8px] opacity-50'>
+          <Logo />
+        </div>
+        <Image
+            className='absolute bottom-0 right-[100px]'
+            width="750"
+            height="750"
+            src="/images/woman-smiling-1.png"
+            alt=""
+              />
+        <div className='flex justify-between scale-90 w-[1248px] py-36 mx-auto'>
+          <div className='w-3/6'>
+            <h1 className='text-5xl font-base my-11 w-5/6'>Ваша улыбка заслуживает внимания</h1>
+            <h3 className='text-xl font-light'>Не что так не радует стоматолога, как вид вашей обновлненной улыбки. Позвольте себе долгосрочную инвестицию в красоту и здоровье которая никогда не обесценится, улучшит ваш образ, облегчит общение и принесет много положительных эмоций!</h3>
           </div>
-          {/* <Slider /> */}
         </div>
       </section>
       <About />

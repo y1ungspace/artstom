@@ -38,6 +38,10 @@
   background: linear-gradient(257deg, rgba(18,109,144,1) 0%, rgba(28,172,228,1) 50%, rgba(28,178,228,0.6573004201680672) 100%);
 }
 
+.top-background-radius {
+  border-radius: 0% 0% 73% 100% / 99% 100% 86% 53%;
+}
+
 .about {
   background: linear-gradient(180deg, rgba(1,1,1,0) 0%, rgba(0,0,0,1) 40%, rgba(0,0,0,1) 100%);
 }

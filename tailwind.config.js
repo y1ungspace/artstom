@@ -27,6 +27,9 @@ module.exports = {
           4: '#FFFFFF', //white
           5: '#167C9F', //dark blue
         },
+        pastel: {
+          1: '#d1e8f8' //blue
+        }
       },
       dropShadow: {
         'white': 'filter: drop-shadow(0 20px 13px rgb(256 256 256 / 0.03)) drop-shadow(0 8px 5px rgb(256 256 256 / 0.08))'
