@@ -10,12 +10,13 @@ const Contacts: React.FC = () => {
   return(
     <div className={"flex justify-around items-center gap-3"}>
       <a className="
-          text-xs 
+          text-sm 
           font-medium
           uppercase
-          border-[0.5px]
+          border-[1px]
           border-base-1
-          p-4
+          px-5
+          py-[14px]
           rounded-lg
           duration-300
           hover:bg-base-5

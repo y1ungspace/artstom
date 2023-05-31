@@ -11,7 +11,7 @@ const fontInter = Inter({
 const About: React.FC = () => {
   return(
     <div className='h-[600px]'>
-      <div className='flex w-[calc(100%_-_50px)] mt-16  mx-auto px-16rounded-3xl p-1'>
+      <div className='flex w-[calc(100%_-_50px)] mt-24  mx-auto px-16rounded-3xl p-1'>
         <Image 
           className='rounded-3xl'
           src="/images/profile.jpg"

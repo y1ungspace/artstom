@@ -28,7 +28,7 @@ const Purposes: React.FC = () => {
   ))
  
   return(   
-    <div className="bg-base-4 w-[calc(100%_-_50px)] mx-auto rounded-3xl px-32 py-12 mt-32">
+    <div className="w-[calc(100%_-_50px)] mx-auto rounded-3xl px-32 py-12 mt-32">
       <h1 className="text-3xl pb-8 font-medium">Ещё {purposes.length} причин по которым стоит к нам обратиться</h1>
       <div className="grid grid-cols-2 gap-6">
         {purposes}

@@ -4,7 +4,7 @@
 
 @layer components {
   body {
-    @apply bg-base-4 text-black overflow-x-hidden
+    @apply bg-secondary-1 text-black overflow-x-hidden
   }
 
   html {
@@ -39,7 +39,7 @@
 }
 
 .top-background-radius {
-  border-radius: 0% 0% 73% 100% / 99% 100% 86% 53%;
+  border-radius: 0% 0% 40% 60% / 61% 25% 75% 39% ;
 }
 
 .about {

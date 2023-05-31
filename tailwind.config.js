@@ -29,6 +29,9 @@ module.exports = {
         },
         pastel: {
           1: '#d1e8f8' //blue
+        },
+        secondary: {
+          1: '#F5F6FA' //main background
         }
       },
       dropShadow: {
