@@ -5,7 +5,7 @@ const Block3: React.FC = () => {
 
   const Paragraph: React.FC<IBlock3Paragraph> = (props) => {
     return(
-      <div className='flex items-center gap-8 font-medium text-xl px-6 duration-200 ease-in-out text-base-1/80 hover:scale-105 hover:text-base-1'>
+      <div className='flex items-center gap-8 font-base text-xl px-6 duration-200 ease-in-out text-base-1/80 hover:scale-105 hover:text-base-1'>
         {props.id % 2 === 0 ? 
           <>
             <p>{props.text}</p>
@@ -35,7 +35,7 @@ const Block3: React.FC = () => {
   return(
     <section className='w-[calc(100%_-_50px)] p-16 mx-auto mt-16 rounded-3xl pb-32'>
       <h1 className='text-6xl font-bold'>Как мы работаем</h1>
-      <h3 className='component w-[550px] text-xl opacity-80'>Уделяем повышенное внимание эстетике и профилактике: Мы уверены и постоянно доказываем на практике, что даже простую пломбу можно поставить красиво – так, чтобы она приближала улыбку к идеалу.</h3>
+      <h3 className='component w-[550px] text-lg opacity-80'>Уделяем повышенное внимание эстетике и профилактике: Мы уверены и постоянно доказываем на практике, что даже простую пломбу можно поставить красиво – так, чтобы она приближала улыбку к идеалу.</h3>
       <div>
         {Block3Data.map((elem) => 
           <Paragraph id={elem.id} key={elem.id} text={elem.text} img={elem.img} />
