@@ -10,11 +10,6 @@ import Block3 from '../../components/home/Block3';
 import Logo from '@/app/components/Logo';
 import Image from 'next/image'
 
-const fontInter = Inter({
-  subsets: ["latin"],
-  weight: ['100', '200', '300', '400', '500', '600', '700', '800', '900']
-})
-
 const imagesArray = [
   'https://www.dropbox.com/s/3u5g0h3d6sh86xu/IMG_8851.jpg?raw=1',
   'https://www.dropbox.com/s/k2gppwmyt7bnjpl/IMG_8835.jpg?raw=1',
@@ -37,7 +32,7 @@ export default function Home() {
               />
         <div className='flex justify-between scale-90 w-[1248px] py-36 mx-auto'>
           <div className='w-3/6'>
-            <h1 className='text-5xl font-light my-11 w-5/6'>Ваша улыбка заслуживает внимания</h1>
+            <h1 className='text-5xl font-light my-11 w-[95%]'>Ваша улыбка заслуживает внимания</h1>
             <h3 className='text-xl font-extralight'>Ничто так не радует стоматолога, как вид вашей обновлённой улыбки. Позвольте себе долгосрочную инвестицию в красоту и здоровье, которая никогда не обесценится, улучшит ваш образ, облегчит общение и принесет много положительных эмоций!</h3>
           </div>
         </div>
