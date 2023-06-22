@@ -7,17 +7,55 @@ const Footer: React.FC = () => {
   return(
     <section className="flex flex-col items-center text-base-1/90 mt-16 mb-8" >
       <div className="flex flex-col items-center gap-2">
-        {/* <Logo /> */}
+        <Logo />
         <div className="w-[200px] min-h-[1px] bg-base-1" />
-        <h1 className="text-xl">Потапкин Артём Владленович</h1>
+        <h1 className="text-md font-extralight uppercase">Потапкин Артём Владленович</h1>
       </div>
       <div className="flex min-w-[calc(100%_-_300px)] gap-20 mt-8">
-        <div className="flex justify-between items-center grow ml-auto">
-          <a href="/pages/services" className="py-1 text-left hover:text-base-1">Услуги</a>
-          <a href="/pages/prices" className="py-1 text-left hover:text-base-1">Цены</a>
-          <a href="/pages/specialists" className="py-1 text-left hover:text-base-1">Специалисты</a>
-          <a href="/pages/gallery" className="py-1 text-left hover:text-base-1">Галерея</a>
-          <a href="/pages/contacts" className="py-1 text-left hover:text-base-1">Контакты</a>
+        <div className="flex 
+                        justify-between
+                        items-center
+                        grow
+                        uppercase
+                        text-sm
+                        font-medium
+                        ml-auto
+                        ">
+          <a href="/pages/services"
+             className="py-1
+                        text-left
+                        hover:text-base-2
+                        transition-all
+                        duration-300"
+                        >Услуги</a>
+          <a href="/pages/prices"
+             className="py-1
+                        text-left
+                        hover:text-base-2
+                        transition-all
+                        duration-300"
+                        >Цены</a>
+          <a href="/pages/specialists"
+             className="py-1
+                        text-left
+                        hover:text-base-2
+                        transition-all
+                        duration-300"
+                        >Специалисты</a>
+          <a href="/pages/gallery"
+             className="py-1
+                        text-left
+                        hover:text-base-2
+                        transition-all
+                        duration-300"
+                        >Галерея</a>
+          <a href="/pages/contacts"
+             className="py-1
+                        text-left
+                        hover:text-base-2
+                        transition-all
+                        duration-300"
+                        >Контакты</a>
         </div>
         <div className="w-0.5 bg-base-3/50"></div>
         <div className="flex flex-col self-start w-[350px]">
