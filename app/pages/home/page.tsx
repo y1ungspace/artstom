@@ -9,6 +9,7 @@ import Purposes from '../../components/home/Purposes'
 import Block3 from '../../components/home/Block3';
 import Logo from '@/app/components/Logo';
 import Image from 'next/image'
+import SwiperSlider from '@/app/components/home/Swiper';
 
 const imagesArray = [
   'https://www.dropbox.com/s/3u5g0h3d6sh86xu/IMG_8851.jpg?raw=1',
@@ -39,15 +40,16 @@ export default function Home() {
       </section>
       <About />
       <Block3 />
-      <div className='flex w-[calc(100%_-_50px)] mt-10 mx-auto rounded-3xl'>
+      {/* <div className='flex w-[calc(100%_-_50px)] mt-10 mx-auto rounded-3xl'>
         <div className='flex flex-col justify-center pl-20'>
           <h1 className='text-4xl font-bold'>Title</h1>
           <h3 className='font-medium'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum, non dolores, harum beatae, aspernatur tempore facere dignissimos atque velit dolore mollitia? Optio quibusdam mollitia modi quia accusamus dignissimos voluptatibus sed?</h3>
         </div>
         <Carousel width={700} height={500} images={imagesArray} />
-      </div>
-      <Location />
+      </div> */}
       <Purposes />
+      <SwiperSlider />
+      <Location />
     </>
   )
 } 
