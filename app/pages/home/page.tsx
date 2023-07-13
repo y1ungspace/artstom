@@ -10,6 +10,7 @@ import Block3 from '../../components/home/Block3';
 import Logo from '@/app/components/Logo';
 import Image from 'next/image'
 import SwiperSlider from '@/app/components/home/Swiper';
+import Swiper2 from '@/app/components/home/Swiper2';
 
 const imagesArray = [
   'https://www.dropbox.com/s/3u5g0h3d6sh86xu/IMG_8851.jpg?raw=1',
@@ -38,6 +39,7 @@ export default function Home() {
           </div>
         </div>
       </section>
+      <Swiper2 />
       <About />
       <Block3 />
       {/* <div className='flex w-[calc(100%_-_50px)] mt-10 mx-auto rounded-3xl'>

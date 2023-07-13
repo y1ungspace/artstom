@@ -61,3 +61,17 @@
 .block-3-gradient {
   background: linear-gradient(180deg, rgba(19,108,144,1) 0%, rgba(11,62,83,1) 75%, rgba(1,1,1,1) 100%);
 }
+
+/* swiper */
+
+.swiper-button-prev,
+.swiper-button-next {
+  color: #3E3E3E;
+  transition: 0.3s;
+}
+
+.swiper-button-prev:hover,
+.swiper-button-next:hover {
+  color: black;
+  scale: 110%
+}
