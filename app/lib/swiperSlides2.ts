@@ -1,9 +1,5 @@
 const swiperSlides2 = [
   {
-    url: "https://www.dropbox.com/s/g6ej9a6az96jw71/Example5.jpg?raw=1",
-    progress: 0,
-  },
-  {
     url: "https://www.dropbox.com/s/babf0aak90im5si/Example8.jpg?raw=1",
     progress: 1,
   },
@@ -34,6 +30,10 @@ const swiperSlides2 = [
   {
     url: "https://www.dropbox.com/s/m1cwuo836kw90si/Example3.jpg?raw=1",
     progress: 2,
+  },
+  {
+    url: "https://www.dropbox.com/s/g6ej9a6az96jw71/Example5.jpg?raw=1",
+    progress: 0,
   },
 ]
 
