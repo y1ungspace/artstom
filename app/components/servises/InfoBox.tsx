@@ -43,7 +43,7 @@ const InfoBox = () => {
   };
 
   return (
-    <div className='w-[calc(100%_-_40px)] flex gap-10 bg-base-2/20 mb-20 mx-auto p-[50px] rounded-2xl'>
+    <div className='w-full flex gap-10 bg-base-2/20 mb-20 mx-auto p-[50px] rounded-2xl shadow-md'>
       <div className={`text-lg font-base w-1/2 text-base-3`}>
         <h1 className='text-4xl font-md mb-5 text-base-1'>Лечение кариеса</h1>
         <p className='mb-6'>Лечение кариеса происходит всего за один визит, в клинике "Галерея Улыбок" зубы восстанавливают с использованием современных, эстетичных и прочных композитных материалов.</p>

@@ -4,7 +4,20 @@ import Image from "next/image"
 
 const QuickButton: React.FC = () => {
   return(
-    <div className="group w-[270px] h-[300px] bg-base-2/20 text-center rounded-xl cursor-pointer transition-all duration-300 hover:shadow-xl hover:drop-shadow-xl">
+    <div className="
+        group
+        w-[270px]
+        h-[300px]
+        bg-base-2/20
+        text-center
+        rounded-xl
+        shadow-md
+        cursor-pointer
+        transition-all
+        duration-300
+        hover:shadow-xl
+        hover:drop-shadow-xl
+        ">
       <Image
         src="https://www.dropbox.com/s/ge6l46jc74loei8/caries.png?raw=1"
         width={220}

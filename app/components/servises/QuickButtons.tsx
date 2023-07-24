@@ -4,7 +4,7 @@ import QuickButton from "./QuickButton"
 
 const QuickButtons: React.FC = () => {
   return(
-    <section className="flex justify-evenly my-12">
+    <section className="flex gap-6 my-12 mx-10">
       <QuickButton />
       <QuickButton />
       <QuickButton />
