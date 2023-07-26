@@ -50,3 +50,25 @@ export interface IBlock3Paragraph {
   text: string,
   id: number,
 }
+
+export interface IServiceData {
+  name: string;
+  description: {
+      1?: string;
+      2?: string;
+      3?: string;
+  };
+  image: string;
+  button: {
+      name: string;
+      icon: string;
+  };
+  sidebar: {
+    name: string;
+  };
+  id: number;
+}
+
+export interface IServiceDataWrapper {
+  data: IServiceData[]
+}

@@ -1,4 +1,8 @@
-const services = [
+'use client'
+
+import { IServiceData } from "../variables/Interfaces"
+
+const services: IServiceData[] = [
   {
     name: 'Лечение кариеса',
     description: {

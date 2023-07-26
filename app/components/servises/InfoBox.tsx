@@ -2,8 +2,9 @@
 
 import { useState } from 'react';
 import Image from 'next/image';
+import { IServiceData } from '@/app/variables/Interfaces';
 
-const InfoBox = () => {
+const InfoBox: React.FC<{data: IServiceData}> = ({data}) => {
   const [isMagnetActive, setIsMagnetActive] = useState(false);
   const [magnetPosition, setMagnetPosition] = useState({ x: 0, y: 0 });
 
@@ -45,7 +46,7 @@ const InfoBox = () => {
   return (
     <div className='w-full flex gap-10 bg-base-2/20 mb-20 mx-auto p-[50px] rounded-2xl shadow-md'>
       <div className={`text-lg font-base w-1/2 text-base-3`}>
-        <h1 className='text-4xl font-md mb-5 text-base-1'>Лечение кариеса</h1>
+        <h1 className='text-4xl font-md mb-5 text-base-1'>{data.name}</h1>
         <p className='mb-6'>Лечение кариеса происходит всего за один визит, в клинике "Галерея Улыбок" зубы восстанавливают с использованием современных, эстетичных и прочных композитных материалов.</p>
         <p>В 90% случаев течение кариеса безсимптомно, а несвоевременное лечение приводит к воспалению пульпы зуба и необходимости лечить корневые каналы (когда сохранить зуб живым невозможно). Поэтому регулярные профилактические осмотры и лечение кариеса на ранних стадиях - самый недорогой способ сохранить свои зубы на всю жизнь.</p>
       </div>
