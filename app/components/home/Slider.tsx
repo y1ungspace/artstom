@@ -1,6 +1,6 @@
 'use client'
 
-import { getStaticProps } from "@/app/lib/sliderImages";
+import { getStaticProps } from "@/app/lib/sideImages";
 import { sliderElem } from "@/app/variables/Interfaces";
 import { useEffect, useState } from "react";
 import Image from "next/image";
