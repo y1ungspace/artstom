@@ -18,8 +18,8 @@ const InfoBox = () => {
     const distanceY = clientY - centerY;
 
     const { paddingLeft, paddingRight, paddingTop, paddingBottom } = getComputedStyle(target);
-    const paddingX = (parseFloat(paddingLeft) + parseFloat(paddingRight) * 10);
-    const paddingY = (parseFloat(paddingTop) + parseFloat(paddingBottom) * 10);
+    const paddingX = (parseFloat(paddingLeft) + parseFloat(paddingRight) * 9);
+    const paddingY = (parseFloat(paddingTop) + parseFloat(paddingBottom) * 9);
 
     const maxX = (width / 2 - paddingX) / 2;
     const maxY = (height / 2 - paddingY) / 2;
@@ -27,7 +27,7 @@ const InfoBox = () => {
     const clampedX = Math.max(-maxX, Math.min(distanceX, maxX));
     const clampedY = Math.max(-maxY, Math.min(distanceY, maxY));
 
-    if (Math.abs(clampedX) < 30 && Math.abs(clampedY) < 30) {
+    if (Math.abs(clampedX) < 50 && Math.abs(clampedY) < 50) {
       setIsMagnetActive(true);
       setMagnetPosition({ x: clampedX, y: clampedY });
     } else {
@@ -54,7 +54,7 @@ const InfoBox = () => {
         onMouseMove={handleMouseMove}
         onMouseLeave={handleMouseLeave}
       >
-        <div className="image-container p-14">
+        <div className="image-container p-8">
           <Image
             src="https://www.dropbox.com/s/ge6l46jc74loei8/caries.png?raw=1"
             width={220}

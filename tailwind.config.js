@@ -34,6 +34,9 @@ module.exports = {
           1: '#F5F6FA' //main background
         }
       },
+      borderWidth: {
+        'sm': '0.3px'
+      },
       dropShadow: {
         'white': 'filter: drop-shadow(0 20px 13px rgb(256 256 256 / 0.03)) drop-shadow(0 8px 5px rgb(256 256 256 / 0.08))'
       },

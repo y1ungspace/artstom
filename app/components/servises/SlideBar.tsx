@@ -30,7 +30,7 @@ useEffect(() => {
     <section className="min-w-[270px]"
       ref={slidebarRef}
       >
-      <div className={`flex flex-col gap-2 min-w-[270px] h-fit bg-base-4 rounded-2xl shadow-md p-6 transition-all duration-100 ${isBellowY ? ' fixed top-32' : ''}`}>
+      <div className={`flex flex-col gap-2 min-w-[270px] h-fit bg-base-4 rounded-2xl shadow-md p-6 transition-all duration-200 ${isBellowY ? ' fixed top-32 scale-105 rounded-xl' : ''}`}>
         <h1 className='text-2xl font-md mb-5 text-left text-base-1'>Услуги</h1>
         <button className="text-base font-medium text-left text-base-1/60 pl-2">Лечение Кариеса</button>
         <button className="text-base font-medium text-left text-base-1/60 pl-2">Лечение Кариеса</button>
