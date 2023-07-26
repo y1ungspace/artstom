@@ -72,3 +72,10 @@ export interface IServiceData {
 export interface IServiceDataWrapper {
   data: IServiceData[]
 }
+
+export interface IServiceButton {
+  data: { 
+    name: string;
+    icon: string;
+  }; 
+}

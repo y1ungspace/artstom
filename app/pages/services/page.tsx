@@ -11,7 +11,7 @@ export default function Services() {
   return (
     <>
       <TopSection />
-      <QuickButtons />
+      <QuickButtons data={services} />
       <div className='flex gap-6 mx-10'>
       <Slidebar />
       <InfoWrapper data={services} />

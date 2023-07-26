@@ -126,7 +126,7 @@ const services: IServiceData[] = [
     },
     image: '',
     button: {
-      name: 'All-on-4 ',
+      name: 'Протезирование всей челюсти (4) ',
       icon: '',
     },
     sidebar: {
@@ -141,7 +141,7 @@ const services: IServiceData[] = [
     },
     image: '',
     button: {
-      name: 'Протезирование всей челюсти',
+      name: 'Протезирование всей челюсти (6+)',
       icon: '',
     },
     sidebar: {

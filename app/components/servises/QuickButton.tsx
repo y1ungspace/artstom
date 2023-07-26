@@ -1,8 +1,9 @@
 'use client'
 
+import { IServiceButton } from "@/app/variables/Interfaces"
 import Image from "next/image"
 
-const QuickButton: React.FC = () => {
+const QuickButton: React.FC<IServiceButton> = ({data}) => {
   return(
     <div className="
         group
@@ -37,7 +38,8 @@ const QuickButton: React.FC = () => {
           duration-300
           group-hover:bg-base-5
           group-hover:text-base-4
-        ">Лечение Кариеса
+        ">
+          {data.name}
       </button>
     </div>
   )

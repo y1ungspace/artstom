@@ -3,8 +3,9 @@
 import { useEffect, useRef, useState } from "react"
 import Image from "next/image"
 import QuickButton from "./QuickButton"
+import { IServiceDataWrapper } from "@/app/variables/Interfaces"
 
-const QuickButtons: React.FC = () => {
+const QuickButtons: React.FC<IServiceDataWrapper> = ({data}) => {
   const [isMoving, setIsMoving] = useState(false)
   const [isStart, setIsStart] = useState(true)
   const [isEnd, setIsEnd] = useState(false)
@@ -46,12 +47,7 @@ const QuickButtons: React.FC = () => {
         'border-r-sm'}`}
            ref={buttonsRef}
         >
-        <QuickButton />
-        <QuickButton />
-        <QuickButton />
-        <QuickButton />
-        <QuickButton />
-        <QuickButton />
+          {data.map((e) => <QuickButton data={e.button} />)}
       </div>
       <Image 
         alt=""
