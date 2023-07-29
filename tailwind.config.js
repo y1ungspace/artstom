@@ -28,11 +28,11 @@ module.exports = {
           5: '#167C9F', //dark blue
         },
         element: {
-          1: 'rgb(28, 172, 228)', // blue 
-          2: 'rgb(214, 73, 51)', // red
-          3: 'rgb(252, 191, 73)', // orange
-          4: 'rgb(214, 208, 92)', //yellow
-          5: 'rgb(255, 108, 10)', //orange
+          1: '#D0E7F7', // blue 
+          2: '#E09891', // red
+          3: '#FFC71F', // orange
+          4: '#d6d05c', //yellow
+          5: '#FF6C0A', //orange
         },
         pastel: {
           1: '#d1e8f8' //blue
@@ -64,7 +64,7 @@ module.exports = {
   plugins: [],
   safelist: [
     {
-      pattern: /bg-(sky|green|blue)-(400|500|600)/,
+      pattern: /bg-element-(1|2|3)/,
       pattern: /transition-(all|none)/,
     },
   ]

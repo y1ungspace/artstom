@@ -53,10 +53,17 @@ const InfoBox: React.FC<{data: IServiceData}> = ({data}) => {
             p-[50px]
             rounded-2xl
             shadow-md
-             ${data.id > 5 ? 
-                `bg-element-${data.id - 5}/20`:
-                `bg-element-${data.id}/20`}
-            `}
+            ${data.id % 5 === 0 ? 
+              'bg-element-5/20' : 
+              data.id % 4 === 0 ? 
+              'bg-element-4/20' : 
+              data.id % 3 === 0 ? 
+              'bg-element-3/20' :
+              data.id % 2 === 0 ? 
+              'bg-element-2/20' : 
+              'bg-element-1/20'
+            }`
+          }
             >
       <div className={`text-lg font-base w-1/2 text-base-3`}>
         <h1 className='text-4xl font-md mb-5 text-base-1'>{data.name}</h1>
@@ -68,7 +75,7 @@ const InfoBox: React.FC<{data: IServiceData}> = ({data}) => {
         onMouseLeave={handleMouseLeave}
       >
         <div className="image-container grow p-8">
-          <Image
+          <img
             src="https://www.dropbox.com/s/ge6l46jc74loei8/caries.png?raw=1"
             width={220}
             height={210}

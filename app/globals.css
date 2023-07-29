@@ -1,6 +1,9 @@
 @tailwind base;
 @tailwind components;
-@tailwind utilities;
+
+body {
+  scroll-behavior: smooth
+}
 
 @layer components {
   body {
@@ -11,6 +14,8 @@
     @apply max-w-full overflow-x-hidden
   }
 } 
+
+@tailwind utilities;
 
 .slider-0 {
   transform: translateX(0px);

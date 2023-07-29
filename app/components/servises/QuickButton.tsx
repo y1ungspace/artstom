@@ -17,11 +17,18 @@ const QuickButton: React.FC<IServiceButton> = ({data}) => {
           duration-300
           hover:shadow-xl
           hover:drop-shadow-xl
-           ${data.id > 5 ?
-              `bg-element-${data.id - 5}/20` :
-              `bg-element-${data.id}/20`}`
+          ${data.id % 5 === 0 ? 
+            'bg-element-5/20' : 
+            data.id % 4 === 0 ? 
+            'bg-element-4/20' : 
+            data.id % 3 === 0 ? 
+            'bg-element-3/20' :
+            data.id % 2 === 0 ? 
+            'bg-element-2/20' : 
+            'bg-element-1/20'
+          }`
           }>
-      <Image
+      <img
         src="https://www.dropbox.com/s/ge6l46jc74loei8/caries.png?raw=1"
         width={220}
         height={210}
