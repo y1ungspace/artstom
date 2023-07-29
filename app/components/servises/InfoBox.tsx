@@ -28,7 +28,7 @@ const InfoBox: React.FC<{data: IServiceData}> = ({data}) => {
     const clampedX = Math.max(-maxX, Math.min(distanceX, maxX));
     const clampedY = Math.max(-maxY, Math.min(distanceY, maxY));
 
-    if (Math.abs(clampedX) < 50 && Math.abs(clampedY) < 50) {
+    if (Math.abs(clampedX) < 30 && Math.abs(clampedY) < 30) {
       setIsMagnetActive(true);
       setMagnetPosition({ x: clampedX, y: clampedY });
     } else {
@@ -47,15 +47,14 @@ const InfoBox: React.FC<{data: IServiceData}> = ({data}) => {
     <div className='w-full flex gap-10 bg-base-2/20 mb-20 mx-auto p-[50px] rounded-2xl shadow-md'>
       <div className={`text-lg font-base w-1/2 text-base-3`}>
         <h1 className='text-4xl font-md mb-5 text-base-1'>{data.name}</h1>
-        <p className='mb-6'>Лечение кариеса происходит всего за один визит, в клинике "Галерея Улыбок" зубы восстанавливают с использованием современных, эстетичных и прочных композитных материалов.</p>
-        <p>В 90% случаев течение кариеса безсимптомно, а несвоевременное лечение приводит к воспалению пульпы зуба и необходимости лечить корневые каналы (когда сохранить зуб живым невозможно). Поэтому регулярные профилактические осмотры и лечение кариеса на ранних стадиях - самый недорогой способ сохранить свои зубы на всю жизнь.</p>
+        {data.description.map((text) => <p className='mb-6'>{text}</p>)}
       </div>
       <div
-        className={`grow p-5 radial-background ${isMagnetActive ? 'magnet' : ''}`}
+        className={`flex justify-center items-center grow p-5 radial-background ${isMagnetActive ? 'magnet' : ''}`}
         onMouseMove={handleMouseMove}
         onMouseLeave={handleMouseLeave}
       >
-        <div className="image-container p-8">
+        <div className="image-container grow p-8">
           <Image
             src="https://www.dropbox.com/s/ge6l46jc74loei8/caries.png?raw=1"
             width={220}

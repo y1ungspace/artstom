@@ -51,13 +51,10 @@ export interface IBlock3Paragraph {
   id: number,
 }
 
+
 export interface IServiceData {
   name: string;
-  description: {
-      1?: string;
-      2?: string;
-      3?: string;
-  };
+  description: string[],
   image: string;
   button: {
       name: string;
