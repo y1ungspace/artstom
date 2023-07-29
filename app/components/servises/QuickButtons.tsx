@@ -31,8 +31,10 @@ const QuickButtons: React.FC<IServiceDataWrapper> = ({data}) => {
     (buttonsRef.current as HTMLDivElement).addEventListener('scroll', checkChange, false);
     (buttonsRef.current as HTMLDivElement).addEventListener('scrollend', stop, false);
     return () => {
-      (buttonsRef.current as unknown as HTMLDivElement).addEventListener("scroll", checkChange, false);
-      (buttonsRef.current as unknown as HTMLDivElement).addEventListener('scrollend', stop, false);
+      if (buttonsRef.current !== null) {
+        (buttonsRef.current as unknown as HTMLDivElement).addEventListener("scroll", checkChange, false);
+        (buttonsRef.current as unknown as HTMLDivElement).addEventListener('scrollend', stop, false);
+      }
     };
   }, [])
 
