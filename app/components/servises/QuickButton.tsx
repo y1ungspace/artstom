@@ -5,20 +5,22 @@ import Image from "next/image"
 
 const QuickButton: React.FC<IServiceButton> = ({data}) => {
   return(
-    <div className="
-        group
-        min-w-[270px]
-        h-[300px]
-        bg-base-2/20
-        text-center
-        rounded-xl
-        shadow-md
-        cursor-pointer
-        transition-all
-        duration-300
-        hover:shadow-xl
-        hover:drop-shadow-xl
-        ">
+    <div className={`
+          group
+          min-w-[270px]
+          h-[300px]
+          text-center
+          rounded-xl
+          shadow-md
+          cursor-pointer
+          transition-all
+          duration-300
+          hover:shadow-xl
+          hover:drop-shadow-xl
+           ${data.id > 5 ?
+              `bg-element-${data.id - 5}/20` :
+              `bg-element-${data.id}/20`}`
+          }>
       <Image
         src="https://www.dropbox.com/s/ge6l46jc74loei8/caries.png?raw=1"
         width={220}
@@ -39,7 +41,7 @@ const QuickButton: React.FC<IServiceButton> = ({data}) => {
           group-hover:bg-base-5
           group-hover:text-base-4
         ">
-          {data.name}
+          {data.button.name}
       </button>
     </div>
   )

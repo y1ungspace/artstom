@@ -44,10 +44,23 @@ const InfoBox: React.FC<{data: IServiceData}> = ({data}) => {
   };
 
   return (
-    <div className='w-full flex gap-10 bg-base-2/20 mb-20 mx-auto p-[50px] rounded-2xl shadow-md'>
+    <div className={`
+            w-full
+            flex
+            gap-10
+            mb-20
+            mx-auto
+            p-[50px]
+            rounded-2xl
+            shadow-md
+             ${data.id > 5 ? 
+                `bg-element-${data.id - 5}/20`:
+                `bg-element-${data.id}/20`}
+            `}
+            >
       <div className={`text-lg font-base w-1/2 text-base-3`}>
         <h1 className='text-4xl font-md mb-5 text-base-1'>{data.name}</h1>
-        {data.description.map((text) => <p className='mb-6'>{text}</p>)}
+        {data.description.map((text) => <p className='mb-6' key={text}>{text}</p>)}
       </div>
       <div
         className={`flex justify-center items-center grow p-5 radial-background ${isMagnetActive ? 'magnet' : ''}`}

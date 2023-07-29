@@ -38,7 +38,10 @@ useEffect(() => {
           ''
         }`}>
         <h1 className='text-2xl font-md mb-5 text-left text-base-1'>Услуги</h1>
-        {data.map((e) =>  <button className="text-base font-medium text-left text-base-1/60 pl-2">{e.sidebar.name}</button>)}
+        {data.map((e) =>  <button 
+          className="text-base font-medium text-left text-base-1/60 pl-2"
+          key={e.id}
+        >{e.sidebar.name}</button>)}
       </div>
     </section>
   )

@@ -47,12 +47,13 @@ const QuickButtons: React.FC<IServiceDataWrapper> = ({data}) => {
         'border-r-sm'}`}
            ref={buttonsRef}
         >
-          {data.map((e) => <QuickButton data={e.button} />)}
+          {data.map((e) => <QuickButton data={e} key={e.id} />)}
       </div>
       <Image 
         alt=""
         width={30}
         height={30}
+        key={'right'}
         src={'/icons/arrow-circle.svg'}
         className={`absolute left-0 top-14 rotate-180 duration-200 delay-100
           ${isMoving ? 
@@ -66,6 +67,7 @@ const QuickButtons: React.FC<IServiceDataWrapper> = ({data}) => {
         alt=""
         width={30}
         height={30}
+        key={'left'}
         src={'/icons/arrow-circle.svg'}
         className={`absolute right-0 top-14 duration-200 delay-100
           ${isMoving ? 

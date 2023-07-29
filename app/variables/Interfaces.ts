@@ -71,8 +71,5 @@ export interface IServiceDataWrapper {
 }
 
 export interface IServiceButton {
-  data: { 
-    name: string;
-    icon: string;
-  }; 
+  data: IServiceData;
 }
