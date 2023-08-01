@@ -73,3 +73,9 @@ export interface IServiceDataWrapper {
 export interface IServiceButton {
   data: IServiceData;
 }
+
+export interface ItopSectionObj {
+  img: string,
+  title: string,
+  subtitle: string,
+}
