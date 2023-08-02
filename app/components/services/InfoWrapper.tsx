@@ -8,7 +8,7 @@ import { IServiceDataWrapper } from "@/app/variables/Interfaces"
 const InfoWrapper: React.FC<IServiceDataWrapper> = ({data}) => {
   return(
    <section>
-    {data.map((e) => <InfoBox data={e} key={e.id} />)}
+    {data.map((e) => <InfoBox data={e} key={e.id} id={`box-${e.id}`} />)}
    </section>
   )
 }

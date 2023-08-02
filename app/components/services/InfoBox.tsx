@@ -4,7 +4,7 @@ import { useState } from 'react';
 import Image from 'next/image';
 import { IServiceData } from '@/app/variables/Interfaces';
 
-const InfoBox: React.FC<{data: IServiceData}> = ({data}) => {
+const InfoBox: React.FC<{data: IServiceData, id: string}> = ({data}) => {
   const [isMagnetActive, setIsMagnetActive] = useState(false);
   const [magnetPosition, setMagnetPosition] = useState({ x: 0, y: 0 });
 
@@ -44,13 +44,16 @@ const InfoBox: React.FC<{data: IServiceData}> = ({data}) => {
   };
 
   return (
-    <div className={`
+    <div 
+      id={`box-${data.id}`}
+      className={`
             w-full
             flex
             gap-10
             mb-20
             mx-auto
             p-[50px]
+            scroll-mt-28
             rounded-2xl
             shadow-md
             ${data.id % 5 === 0 ? 

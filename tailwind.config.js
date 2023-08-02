@@ -9,6 +9,7 @@ module.exports = {
     extend: {
       animation: {
         slider: 'slider 1s ease-in-out forward',
+        pop: 'pop 0.5s ease-in-out forwards',
       },
       backgroundImage: {
         'background': 'url("../public/images/background.jpg")',
@@ -54,6 +55,10 @@ module.exports = {
         slider: {
           '0%': {transform: 'scale(1)', background: 'inherit'},
           '100%': {transform: 'scale(1.25)', background: '#FFFFFF'},
+        },
+        pop: {
+          '0%, 100%': { transform: 'scale(1)' },
+          '40%, 60%': { transform: 'scale(1.01)' },
         }
       },
       width: {
