@@ -8,7 +8,8 @@ const Location: React.FC = () => {
         rounded-3xl
         text-center
         lg:mt-32
-        mt-24
+        3md:mt-24
+        mt-16
         '>
       <h1 className="text-4xl font-bold">До нас легко добраться</h1>
       <h3 className="lg:text-lg text-base font-medium opacity-80 w-[700px] mx-auto pb-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo quis dolores ab animi esse? Facere molestiae, voluptates repudiandae sapiente ut sit aliquid, quos libero, atque distinctio recusandae dolore eius illum?</h3>

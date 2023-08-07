@@ -24,7 +24,8 @@ const Swiper2 = () => {
           lg:text-3xl
           text-2xl
           font-bold
-          mt-12
+          3md:mt-12
+          mt-4
           pb-4
           pl-12
         '>Примеры работ</h3>

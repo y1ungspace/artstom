@@ -16,7 +16,8 @@ const Footer: React.FC = () => {
           flex
           xl:min-w-[calc(100%_-_300px)]
           min-w-[calc(100%_-_100px)]
-          gap-20
+          lg:gap-20
+          gap-6
           mt-8
         ">
         <div className="flex 
@@ -24,7 +25,8 @@ const Footer: React.FC = () => {
                         items-center
                         grow
                         uppercase
-                        text-sm
+                        3md:text-sm
+                        text-xs
                         font-medium
                         ml-auto
                         ">
@@ -65,7 +67,7 @@ const Footer: React.FC = () => {
                         >Контакты</a>
         </div>
         <div className="w-0.5 bg-base-3/50"></div>
-        <div className="flex flex-col self-start w-[350px]">
+        <div className="flex flex-col self-start 3md:text-base text-sm 3md:w-[350px] w-80">
           <h1 className="py-0.5 hover:text-base-1">Артстом</h1>
           <a 
             className="py-0.5 hover:text-base-1"
