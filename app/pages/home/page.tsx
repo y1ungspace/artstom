@@ -12,6 +12,7 @@ import Image from 'next/image'
 import SwiperSlider from '@/app/components/home/Swiper';
 import Swiper2 from '@/app/components/home/Swiper2';
 import TopSection from '@/app/components/TopSection';
+import Block3Small from '@/app/components/home/Block3Small';
 
 const topSectionObj = {
   img: '/images/woman-smiling-6.png',
@@ -25,7 +26,11 @@ export default function Home() {
       <TopSection data={topSectionObj} />
       <Swiper2 />
       <About />
-      <Block3 />
+      {
+      window.screen.width > 820 ?
+        <Block3 /> :
+        <Block3Small />
+      }
       <Purposes />
       <SwiperSlider />
       <Location />

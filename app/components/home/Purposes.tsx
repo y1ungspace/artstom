@@ -17,7 +17,7 @@ const Purposes: React.FC = () => {
           className="lg:w-10 lg:pt-0 pt-2 w-7"
         />
         <div>
-          <h1 className="text-xl font-medium py-2">{props.title}</h1>
+          <h1 className="2md:text-xl text-lg font-medium py-2">{props.title}</h1>
           <p className="text-sm opacity-80">{props.description}</p>
         </div>
       </div>
@@ -39,11 +39,21 @@ const Purposes: React.FC = () => {
         lg:px-16
         3md:px-8
         px-4
-        py-12
-        my-4
+        2md:py-12
+        py-4
+        2md:my-4
         bg-base-4
       ">
-      <h1 className="lg:text-3xl text-2xl pb-8 font-medium">Ещё {purposes.length} причин по которым стоит к нам обратиться</h1>
+      <h1
+        className="
+          lg:text-3xl
+          text-2xl
+          2md:text-left
+          text-center
+          2md:pb-8
+          py-4
+          font-medium
+        ">Ещё {purposes.length} причин по которым стоит к нам обратиться</h1>
       <div className="grid grid-cols-2 3md:gap-6 gap-2">
         {purposes}
       </div>

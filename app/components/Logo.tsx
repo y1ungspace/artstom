@@ -11,7 +11,7 @@ const Logo: React.FC = () => {
     <div className="flex flex-col items-center scale-100 transition-all">
       <Image
         onClick={() => router.push('/pages/home')}
-        className="hidden md:block cursor-pointer p-1" 
+        className="md:block cursor-pointer p-1" 
         src="/images/logo.png" 
         height="50" 
         width="50" 

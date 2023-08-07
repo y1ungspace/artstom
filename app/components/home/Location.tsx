@@ -9,10 +9,11 @@ const Location: React.FC = () => {
         text-center
         lg:mt-32
         3md:mt-24
-        mt-16
+        2md:mt-16
+        mt-8
         '>
       <h1 className="text-4xl font-bold">До нас легко добраться</h1>
-      <h3 className="lg:text-lg text-base font-medium opacity-80 w-[700px] mx-auto pb-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo quis dolores ab animi esse? Facere molestiae, voluptates repudiandae sapiente ut sit aliquid, quos libero, atque distinctio recusandae dolore eius illum?</h3>
+      <h3 className="lg:text-lg 2md:text-base text-sm font-medium opacity-80 2md:w-[700px] w-full mx-auto pb-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo quis dolores ab animi esse? Facere molestiae, voluptates repudiandae sapiente ut sit aliquid, quos libero, atque distinctio recusandae dolore eius illum?</h3>
       <div style={{position: 'relative', overflow: 'hidden'}}>
         <a 
           href="https://yandex.ru/maps/org/artstom/27705467946/?utm_medium=mapframe&utm_source=maps" 
@@ -20,7 +21,7 @@ const Location: React.FC = () => {
           >
         </a>
         <iframe 
-          className="w-full rounded-3xl"
+          className="w-full 2md:h-[400px] h-[300px] rounded-3xl"
           src="https://yandex.ru/map-widget/v1/?ll=20.433009%2C54.715916&mode=search&oid=27705467946&ol=biz&z=17" 
           width="1200" 
           height="400"  
