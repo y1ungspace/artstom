@@ -19,7 +19,15 @@ const arrayOfSlides = swiperSlides2;
 const Swiper2 = () => {
   return (
     <>
-      <h3 className='text-3xl font-bold mt-12 pb-4 pl-12'>Примеры работ</h3>
+      <h3
+        className='
+          lg:text-3xl
+          text-2xl
+          font-bold
+          mt-12
+          pb-4
+          pl-12
+        '>Примеры работ</h3>
       <Swiper
         effect={"coverflow"}
         slidesPerView={2.5}

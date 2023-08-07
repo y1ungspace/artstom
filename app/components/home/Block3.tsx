@@ -11,7 +11,8 @@ const Block3: React.FC = () => {
           items-center
           gap-8
           font-base
-          text-xl
+          lg:text-xl
+          text-base
           px-6
           duration-200
           ease-in-out
@@ -47,8 +48,8 @@ const Block3: React.FC = () => {
 
   return(
     <section className='w-[calc(100%_-_50px)] py-16 mx-auto 2lg:mt-16 rounded-3xl'>
-      <h1 className='text-6xl font-bold'>Как мы работаем</h1>
-      <h3 className='component w-[550px] text-lg opacity-80'>Уделяем повышенное внимание эстетике и профилактике: Мы уверены и постоянно доказываем на практике, что даже простую пломбу можно поставить красиво – так, чтобы она приближала улыбку к идеалу.</h3>
+      <h1 className='lg:text-6xl text-5xl font-bold'>Как мы работаем</h1>
+      <h3 className='component lg:w-[550px] w-[420px] lg:text-lg text-sm lg:mb-0 mb-4 opacity-80'>Уделяем повышенное внимание эстетике и профилактике: Мы уверены и постоянно доказываем на практике, что даже простую пломбу можно поставить красиво – так, чтобы она приближала улыбку к идеалу.</h3>
       <div>
         {Block3Data.map((elem) => 
           <Paragraph id={elem.id} key={elem.id} text={elem.text} img={elem.img} />

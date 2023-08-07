@@ -14,6 +14,7 @@ const Purposes: React.FC = () => {
           alt=""
           width={40}
           height={40}
+          className="lg:w-10 lg:pt-0 pt-2 w-7"
         />
         <div>
           <h1 className="text-xl font-medium py-2">{props.title}</h1>
@@ -28,8 +29,20 @@ const Purposes: React.FC = () => {
   ))
  
   return(   
-    <div className="w-[calc(100%_-_50px)] mx-auto rounded-3xl xl:px-32 2lg:px-24 px-16 py-12 my-4 bg-base-4">
-      <h1 className="text-3xl pb-8 font-medium">Ещё {purposes.length} причин по которым стоит к нам обратиться</h1>
+    <div
+      className="
+        w-[calc(100%_-_50px)]
+        mx-auto
+        rounded-3xl
+        xl:px-32
+        2lg:px-24
+        lg:px-16
+        px-8
+        py-12
+        my-4
+        bg-base-4
+      ">
+      <h1 className="lg:text-3xl text-2xl pb-8 font-medium">Ещё {purposes.length} причин по которым стоит к нам обратиться</h1>
       <div className="grid grid-cols-2 gap-6">
         {purposes}
       </div>

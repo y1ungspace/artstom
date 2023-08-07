@@ -7,10 +7,11 @@ const Location: React.FC = () => {
         mx-auto
         rounded-3xl
         text-center
-        mt-32
+        lg:mt-32
+        mt-24
         '>
       <h1 className="text-4xl font-bold">До нас легко добраться</h1>
-      <h3 className="text-lg font-medium opacity-80 w-[700px] mx-auto pb-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo quis dolores ab animi esse? Facere molestiae, voluptates repudiandae sapiente ut sit aliquid, quos libero, atque distinctio recusandae dolore eius illum?</h3>
+      <h3 className="lg:text-lg text-base font-medium opacity-80 w-[700px] mx-auto pb-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo quis dolores ab animi esse? Facere molestiae, voluptates repudiandae sapiente ut sit aliquid, quos libero, atque distinctio recusandae dolore eius illum?</h3>
       <div style={{position: 'relative', overflow: 'hidden'}}>
         <a 
           href="https://yandex.ru/maps/org/artstom/27705467946/?utm_medium=mapframe&utm_source=maps" 
