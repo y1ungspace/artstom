@@ -11,14 +11,14 @@ const TopSection: React.FC<{data: ItopSectionObj}> = ({data}) => {
       <Logo />
     </div>
     <Image
-        className='absolute top-14 right-[100px]'
+        className='absolute top-14 xl:right-[100px] 2lg:right-7 right-0 xl:scale-[1] scale-[0.9]'
         width="800"
         height="800"
         src={data.img}
         alt=""
           />
-    <div className='flex justify-between scale-90 w-[1248px] py-36 mx-auto'>
-      <div className='w-3/6'>
+    <div className='flex justify-between scale-90 xl:w-[1248px] 2lg:w-[1000px] w-[1000px] py-36 mx-auto '>
+      <div className='w-1/2'>
         <h1 className='text-5xl font-medium my-11 w-[95%]'>{data.title}</h1>
         <h3 className='text-lg font-normal'>{data.subtitle}</h3>
       </div>

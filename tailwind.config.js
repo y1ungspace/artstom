@@ -61,6 +61,13 @@ module.exports = {
           '40%, 60%': { transform: 'scale(1.01)' },
         }
       },
+      screens: {
+        'sm': '640px',
+        'md': '768px',
+        '2lg': '1100px',
+        'xl': '1200px',
+        '2xl': '1536px',
+      },
       width: {
         100: '100px',
       },

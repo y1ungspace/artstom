@@ -11,7 +11,14 @@ const Footer: React.FC = () => {
         <div className="w-[200px] min-h-[1px] bg-base-1" />
         <h1 className="text-md font-extralight uppercase">Потапкин Артём Владленович</h1>
       </div>
-      <div className="flex min-w-[calc(100%_-_300px)] gap-20 mt-8">
+      <div
+        className="
+          flex
+          xl:min-w-[calc(100%_-_300px)]
+          min-w-[calc(100%_-_100px)]
+          gap-20
+          mt-8
+        ">
         <div className="flex 
                         justify-between
                         items-center
