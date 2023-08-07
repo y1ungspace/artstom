@@ -3,7 +3,7 @@
 import Image from "next/image";
 import { useRouter } from "next/navigation";
 
-const Logo: React.FC = () => {
+const LogoSmaller: React.FC = () => {
 
   const router = useRouter()
 
@@ -17,9 +17,8 @@ const Logo: React.FC = () => {
         width="50" 
         alt="Logo" 
         />
-        <h1 className="text-base-1 uppercase font-extralight text-lg leading-none">Артстом</h1>
     </div>
   )
 }
 
-export default Logo;
+export default LogoSmaller;

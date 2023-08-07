@@ -19,12 +19,12 @@ const MenuButton: React.FC = () => {
 
   return(
     <Image
-      className="cursor-pointer"
+      className="2lg:hidden cursor-pointer"
       onClick={() => handleClick()}
       src="/icons/menu.svg"
       alt="Burger Menu"
-      width="40"
-      height="40"
+      width="36"
+      height="36"
      />
   )
 }
