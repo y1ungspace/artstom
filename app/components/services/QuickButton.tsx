@@ -9,7 +9,6 @@ const QuickButton: React.FC<IServiceButton> = ({data}) => {
           group
           min-w-[270px]
           h-[300px]
-          text-center
           rounded-xl
           shadow-md
           cursor-pointer
@@ -35,21 +34,27 @@ const QuickButton: React.FC<IServiceButton> = ({data}) => {
         alt=""
         className="mx-auto mt-5 duration-200 group-hover:-translate-y-5 group-hover:scale-110 group-hover: drop-shadow-md"
       />
-      <button 
+      <a
+        href={`#box-${data.id}`}
         className="
+          flex
+          justify-center
+          items-center
           w-[250px] 
           h-[50px]
           bg-base-4
           rounded-xl
           text-xs
+          text-center
           font-medium
+          mx-auto
           uppercase
           duration-300
           group-hover:bg-base-5
           group-hover:text-base-4
         ">
           {data.button.name}
-      </button>
+      </a>
     </div>
   )
 }

@@ -21,22 +21,40 @@ const QuickButtons: React.FC<IServiceDataWrapper> = ({data}) => {
       const e = buttonsRef.current as unknown as HTMLDivElement
       setIsMoving(true)
       e.scrollLeft === 0 ? setIsStart(true) : setIsStart(false);
-      e.scrollWidth - e.scrollLeft < e.offsetWidth ? setIsEnd(true) : setIsEnd(false);
+      e.scrollWidth - e.scrollLeft - 10 < e.offsetWidth ? setIsEnd(true) : setIsEnd(false);
     }
 
-    const stop = () => {
+    const checkStop = () => {
       setIsMoving(false);
     }
 
     (buttonsRef.current as HTMLDivElement).addEventListener('scroll', checkChange, false);
-    (buttonsRef.current as HTMLDivElement).addEventListener('scrollend', stop, false);
+    (buttonsRef.current as HTMLDivElement).addEventListener('scrollend', checkStop, false);
     return () => {
       if (buttonsRef.current !== null) {
         (buttonsRef.current as unknown as HTMLDivElement).addEventListener("scroll", checkChange, false);
-        (buttonsRef.current as unknown as HTMLDivElement).addEventListener('scrollend', stop, false);
+        (buttonsRef.current as unknown as HTMLDivElement).addEventListener('scrollend', checkStop, false);
       }
     };
   }, [])
+
+  // Function to handle scrolling to the left
+  const handleScrollLeft = () => {
+    const container = buttonsRef.current as unknown as HTMLDivElement;
+    container.scrollBy({
+      left: -1000, // You can adjust the scroll amount based on your preference
+      behavior: "smooth", // Smooth scrolling animation
+    });
+  };
+
+  // Function to handle scrolling to the right
+  const handleScrollRight = () => {
+    const container = buttonsRef.current as unknown as HTMLDivElement;
+    container.scrollBy({
+      left: 1000, // You can adjust the scroll amount based on your preference
+      behavior: "smooth", // Smooth scrolling animation
+    });
+  };
 
   return(
     <section className="relative overflow-hidden py-12 mx-10">
@@ -64,6 +82,7 @@ const QuickButtons: React.FC<IServiceDataWrapper> = ({data}) => {
             '-translate-x-10 scale-50' :
             'translate-x-1'
           }`}
+        onClick={handleScrollLeft}
         />
       <Image 
         alt=""
@@ -78,6 +97,7 @@ const QuickButtons: React.FC<IServiceDataWrapper> = ({data}) => {
             'translate-x-10 scale-50' :
             '-translate-x-1'
           }`}
+        onClick={handleScrollRight}
         />
     </section>
   )
