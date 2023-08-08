@@ -27,9 +27,11 @@ export default function Home() {
       <Swiper2 />
       <About />
       {
-      window.screen.width > 820 ?
-        <Block3 /> :
-        <Block3Small />
+        typeof window === "undefined" ?
+         '' :
+        window.screen.width > 820 ?
+          <Block3 /> :
+          <Block3Small />
       }
       <Purposes />
       <SwiperSlider />
