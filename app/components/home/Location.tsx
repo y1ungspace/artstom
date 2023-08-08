@@ -1,3 +1,5 @@
+'use client'
+
 const Location: React.FC = () => {
   return(
     <section 

@@ -1,11 +1,8 @@
 'use client'
 
-import BurgerMenu from "./BurgerMenu"
 import Contacts from "./Contacts"
-import Divider from "./Divider"
 import Logo from "../Logo"
 import MenuButton from "./MenuButton"
-import Title from "./Title"
 import Links from "./Links"
 import Subtitle from "./Subtitle"
 import { useState } from "react"
@@ -39,6 +36,7 @@ const Navbar: React.FC = () => {
       </div>
       <div className="flex 2sm:gap-4 sm:gap-20 xs-gap-6 gap-2 items-center">
         <div className={topPosition > 30 &&
+          typeof window !== "undefined" &&
           window.screen.width < 540 ? 
           'hidden' :
           'block'
