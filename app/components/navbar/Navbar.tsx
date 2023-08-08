@@ -22,8 +22,8 @@ const Navbar: React.FC = () => {
   return(
     <section className={
       topPosition > 30 ? 
-      "flex justify-between items-center px-8 py-3 fixed top-0 bg-base-4 w-full z-10 drop-shadow-md transition-all" : 
-      "flex justify-between items-center px-8 2lg:py-8 py-3 fixed top-0 w-full z-10 transition-all"
+      "flex justify-between items-center 2sm:px-8 px-4 2sm:py-3 py-1 fixed top-0 bg-base-4 w-full z-10 drop-shadow-md transition-all" : 
+      "flex justify-between items-center 2sm:px-8 px-4 2lg:py-8 2sm:py-3 py-1 fixed top-0 w-full z-10 transition-all"
       }>
       <Links />
       <div className={
@@ -37,7 +37,7 @@ const Navbar: React.FC = () => {
       }
        
       </div>
-      <div className="flex gap-4 items-center">
+      <div className="flex 2sm:gap-4 gap-20 items-center">
         <Subtitle />
         <Contacts />
         <MenuButton />

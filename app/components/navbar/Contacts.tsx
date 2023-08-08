@@ -10,6 +10,8 @@ const Contacts: React.FC = () => {
   return(
     <div className={"flex justify-around items-center gap-3"}>
       <a className="
+          2sm:block
+          hidden
           text-sm 
           font-medium
           uppercase

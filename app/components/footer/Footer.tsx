@@ -21,6 +21,8 @@ const Footer: React.FC = () => {
           mt-8
         ">
         <div className="flex 
+                        2md:flex-row
+                        flex-col
                         justify-between
                         items-center
                         grow

@@ -35,7 +35,7 @@ const SwiperSlider = () => {
           slideShadows: true,
         }}
         modules={[EffectCoverflow]}
-        className="mySwiper md:scale-100 scale-125"
+        className="mySwiper md:scale-100 scale-150 md:py-0 py-4"
       >
         {arrOfSlides.map((slide) =>
           <SwiperSlide>
