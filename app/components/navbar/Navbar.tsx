@@ -28,15 +28,19 @@ const Navbar: React.FC = () => {
       "flex items-center scale-[0.8] transition-all" : 
       "flex items-center scale-100 transition-all"
       }>
-        {window.screen.width > 1100 ?
-         <Logo /> :
-         <LogoSmaller />
+        {typeof window === "undefined" ?
+          '' :
+          window.screen.width > 1100 ?
+          <Logo /> :
+          <LogoSmaller />
       }
        
       </div>
       <div className="flex 2sm:gap-4 sm:gap-20 xs-gap-6 gap-2 items-center">
-        <div className={topPosition > 30 &&
-          typeof window !== "undefined" &&
+        <div className={
+          typeof window === "undefined" ?
+          '' :
+          topPosition > 30 &&
           window.screen.width < 540 ? 
           'hidden' :
           'block'
