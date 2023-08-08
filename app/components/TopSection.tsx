@@ -6,13 +6,44 @@ import { ItopSectionObj } from "../variables/Interfaces"
 
 const TopSection: React.FC<{data: ItopSectionObj}> = ({data}) => {
   return(
-    <section className='top-background-radius relative scale-110  bg-pastel-1 overflow-hidden'>
-    <div className='absolute 3md:bottom-[200px] bottom-40 lg:right-[550px] right-[300px] 3md:scale-[7] scale-[5] blur-[0.8px] opacity-50'>
+    <section
+      className='
+        top-background-radius
+        relative
+        flex
+        flex-col-reverse
+        items-center
+        scale-110 
+        md:p-0
+        md:w-auto
+        w-[1000px]
+        md:left-0
+        left-1/2
+        md:ml-0
+        ml-[-500px]
+        bg-pastel-1
+        overflow-hidden
+      '>
+    <div
+      className='
+        absolute
+        3md:bottom-[200px]
+        md:bottom-40
+        bottom-60
+        lg:right-[550px]
+        md:right-[300px]
+        right-[500px]
+        3md:scale-[7]
+        scale-[5]
+        blur-[0.8px]
+        opacity-50
+      '>
       <Logo />
     </div>
     <Image
         className='
-          absolute
+          md:absolute
+          block
           lg:top-14 
           3md:top-0
           -top-16
@@ -24,7 +55,10 @@ const TopSection: React.FC<{data: ItopSectionObj}> = ({data}) => {
           xl:scale-[1]
           lg:scale-[0.9]
           3md:scale-[0.8]
-          scale-[0.7]'
+          md:scale-[0.7]
+          scale-[1]
+          md:w-[800px]
+          w-[300px]'
         width="800"
         height="800"
         src={data.img}
@@ -34,19 +68,22 @@ const TopSection: React.FC<{data: ItopSectionObj}> = ({data}) => {
       className='
         flex
         justify-between
-        scale-90
+        md:text-left
+        text-center
+        md:scale-90
         xl:w-[1248px]
         2lg:w-[1000px]
         lg:w-[1000px]
-        w-[900px]
+        md:w-[900px]
+        w-[500px]
         lg:py-36
         3md:py-24
-        py-16
+        md:py-16
         mx-auto
         '>
-      <div className='w-1/2'>
-        <h1 className='lg:text-5xl text-4xl font-medium 3md:my-11 mt-10 my-6 w-[95%]'>{data.title}</h1>
-        <h3 className='3md:text-lg 3md:pb-0 pb-4 text-base font-normal'>{data.subtitle}</h3>
+      <div className='md:w-1/2'>
+        <h1 className='lg:text-5xl text-4xl font-medium 3md:my-11 md:mt-10 mt-32 my-6 md:p-0 px-10 md:w-[95%]'>{data.title}</h1>
+        <h3 className='3md:text-lg 3md:pb-0 pb-4 md:text-base text-sm font-normal'>{data.subtitle}</h3>
       </div>
     </div>
   </section>

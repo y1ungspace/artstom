@@ -25,8 +25,10 @@ const Swiper2 = () => {
           text-2xl
           font-bold
           3md:mt-12
-          mt-4
-          pb-4
+          md:mt-4
+          mt-12
+          md:pb-4
+          pb-8
           pl-12
         '>Примеры работ</h3>
       <Swiper
@@ -44,7 +46,7 @@ const Swiper2 = () => {
           slideShadows: true,
         }}
         modules={[EffectCoverflow]}
-        className="mySwiper"
+        className="mySwiper md:scale-100 scale-125"
       >
         {arrayOfSlides.map(slide => 
           <SwiperSlide className='group'

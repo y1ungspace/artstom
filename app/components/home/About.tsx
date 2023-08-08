@@ -13,7 +13,18 @@ const About: React.FC = () => {
     <div className='2md:max-h-[600px]'>
       <div className='flex 2md:flex-row flex-col items-center w-[calc(100%_-_50px)] bg-base-4 mx-auto 2md:mt-12 my-12 rounded-3xl'>
         <Image 
-          className='rounded-3xl lg:w-[400px] 2md:w-80 2md:mt-0 mt-4'
+          className='
+            rounded-3xl
+            lg:w-[400px]
+            2md:w-80
+            md:w-[400px]
+            w-full
+            md:h-auto
+            h-[600px]
+            object-cover
+            object-top
+            2md:mt-0
+            md:mt-4'
           src="/images/profile.jpg"
           alt="profile"
           width="400"

@@ -42,6 +42,8 @@ const Purposes: React.FC = () => {
         2md:py-12
         py-4
         2md:my-4
+        md: my-0
+        mb-8
         bg-base-4
       ">
       <h1
@@ -54,7 +56,7 @@ const Purposes: React.FC = () => {
           py-4
           font-medium
         ">Ещё {purposes.length} причин по которым стоит к нам обратиться</h1>
-      <div className="grid grid-cols-2 3md:gap-6 gap-2">
+      <div className="grid md:grid-cols-2 grid-cols-1 3md:gap-6 gap-2">
         {purposes}
       </div>
     </div>

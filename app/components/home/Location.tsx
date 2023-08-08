@@ -10,9 +10,10 @@ const Location: React.FC = () => {
         lg:mt-32
         3md:mt-24
         2md:mt-16
-        mt-8
+        md:mt-8
+        mt-12
         '>
-      <h1 className="text-4xl font-bold">До нас легко добраться</h1>
+      <h1 className="md:text-4xl text-3xl font-bold">До нас легко добраться</h1>
       <h3 className="lg:text-lg 2md:text-base text-sm font-medium opacity-80 2md:w-[700px] w-full mx-auto pb-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo quis dolores ab animi esse? Facere molestiae, voluptates repudiandae sapiente ut sit aliquid, quos libero, atque distinctio recusandae dolore eius illum?</h3>
       <div style={{position: 'relative', overflow: 'hidden'}}>
         <a 

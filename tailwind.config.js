@@ -62,7 +62,7 @@ module.exports = {
         }
       },
       screens: {
-        'sm': '640px',
+        'sm': '610px',
         'md': '720px',
         '2md': '820px',
         '3md': '912px',
