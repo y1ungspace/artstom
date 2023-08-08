@@ -22,7 +22,8 @@ const Swiper2 = () => {
       <h3
         className='
           lg:text-3xl
-          text-2xl
+          xs:text-2xl
+          text-xl
           font-bold
           3md:mt-12
           md:mt-4

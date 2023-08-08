@@ -98,7 +98,8 @@ const TopSection: React.FC<{data: ItopSectionObj}> = ({data}) => {
             my-6
             md:p-0
             sm:px-10
-            px-16
+            xs:px-16
+            px-24
             md:w-[95%]
           '>
             {data.title}
@@ -110,7 +111,8 @@ const TopSection: React.FC<{data: ItopSectionObj}> = ({data}) => {
             pb-4
             2sm:px-0
             sm:px-10
-            px-20
+            xs:px-20
+            px-24
             md:text-base
             text-sm
             font-normal

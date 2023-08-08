@@ -37,8 +37,14 @@ const Navbar: React.FC = () => {
       }
        
       </div>
-      <div className="flex 2sm:gap-4 sm:gap-20 gap-6 items-center">
-        <Subtitle />
+      <div className="flex 2sm:gap-4 sm:gap-20 xs-gap-6 gap-2 items-center">
+        <div className={topPosition > 30 &&
+          window.screen.width < 540 ? 
+          'hidden' :
+          'block'
+        }>
+          <Subtitle />
+        </div>
         <Contacts />
         <MenuButton />
       </div>

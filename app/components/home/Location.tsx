@@ -13,7 +13,13 @@ const Location: React.FC = () => {
         md:mt-8
         mt-12
         '>
-      <h1 className="md:text-4xl text-3xl font-bold">До нас легко добраться</h1>
+      <h1
+        className="
+          md:text-4xl
+          xs:text-3xl
+          text-2xl
+          font-bold
+        ">До нас легко добраться</h1>
       <h3
         className="
           lg:text-lg
@@ -26,7 +32,7 @@ const Location: React.FC = () => {
           mx-auto
           pb-5
           2sm:px-0
-          px-8
+          xs:px-8
           pt-2"
         >Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo quis dolores ab animi esse? Facere molestiae, voluptates repudiandae sapiente ut sit aliquid, quos libero, atque distinctio recusandae dolore eius illum?</h3>
       <div style={{position: 'relative', overflow: 'hidden'}}>
@@ -36,7 +42,7 @@ const Location: React.FC = () => {
           >
         </a>
         <iframe 
-          className="w-full 2md:h-[400px] sm:h-[300px] h-[600px] rounded-3xl"
+          className="w-full 2md:h-[400px] sm:h-[300px] xs:h-[600px] h-[540px] rounded-3xl"
           src="https://yandex.ru/map-widget/v1/?ll=20.433009%2C54.715916&mode=search&oid=27705467946&ol=biz&z=17" 
           width="1200" 
           height="400"  
