@@ -14,13 +14,16 @@ const Footer: React.FC = () => {
       <div
         className="
           flex
+          sm:flex-row
+          flex-col
           xl:min-w-[calc(100%_-_300px)]
           min-w-[calc(100%_-_100px)]
           lg:gap-20
           gap-6
           mt-8
         ">
-        <div className="flex 
+        <div className="sm:flex 
+                        hidden
                         2md:flex-row
                         flex-col
                         justify-between

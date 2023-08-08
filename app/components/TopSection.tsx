@@ -86,8 +86,37 @@ const TopSection: React.FC<{data: ItopSectionObj}> = ({data}) => {
         mx-auto
         '>
       <div className='md:w-1/2'>
-        <h1 className='lg:text-5xl text-4xl 2sm:font-medium 3md:my-11 md:mt-10 mt-32 my-6 md:p-0 px-10 md:w-[95%]'>{data.title}</h1>
-        <h3 className='3md:text-lg 3md:pb-0 pb-4 2sm:px-0 px-10 md:text-base text-sm font-normal'>{data.subtitle}</h3>
+        <h1
+          className='
+            lg:text-5xl
+            sm:text-4xl
+            text-3xl
+            2sm:font-medium
+            3md:my-11
+            md:mt-10
+            mt-32
+            my-6
+            md:p-0
+            sm:px-10
+            px-16
+            md:w-[95%]
+          '>
+            {data.title}
+          </h1>
+        <h3
+          className='
+            3md:text-lg
+            3md:pb-0
+            pb-4
+            2sm:px-0
+            sm:px-10
+            px-20
+            md:text-base
+            text-sm
+            font-normal
+          '>
+            {data.subtitle}
+          </h3>
       </div>
     </div>
   </section>

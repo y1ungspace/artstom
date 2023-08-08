@@ -20,9 +20,10 @@ const About: React.FC = () => {
             md:w-[400px]
             w-full
             md:h-auto
-            h-[600px]
+            sm:h-[600px]
+            h-[500px]
             object-cover
-            object-top
+            sm:object-top
             2md:mt-0
             md:mt-4'
           src="/images/profile.jpg"
@@ -30,8 +31,8 @@ const About: React.FC = () => {
           width="400"
           height="100"
           />
-        <div className={'flex flex-col gap-5 xl:mt-32 lg:mt-16 mt-8 mx-10 ' + fontInter.className}>
-          <div className='2lg:text-4xl lg:text-3xl 2md:text-xl text-2xl font-semibold'>
+        <div className={'flex flex-col gap-5 xl:mt-32 lg:mt-16 sm:mt-8 mt-4 sm:mx-10 mx-4 ' + fontInter.className}>
+          <div className='2lg:text-4xl lg:text-3xl 2md:text-xl sm:text-2xl text-xl font-semibold'>
             <h3 className='opacity-80'>Вот уже 15 лет я занимаюсь любимым делом, </h3>
             <p className='opacity-100'>моя цель – идеальная улыбка.</p>
           </div>

@@ -36,7 +36,7 @@ const Location: React.FC = () => {
           >
         </a>
         <iframe 
-          className="w-full 2md:h-[400px] h-[300px] rounded-3xl"
+          className="w-full 2md:h-[400px] sm:h-[300px] h-[600px] rounded-3xl"
           src="https://yandex.ru/map-widget/v1/?ll=20.433009%2C54.715916&mode=search&oid=27705467946&ol=biz&z=17" 
           width="1200" 
           height="400"  

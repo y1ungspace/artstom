@@ -37,7 +37,7 @@ const Navbar: React.FC = () => {
       }
        
       </div>
-      <div className="flex 2sm:gap-4 gap-20 items-center">
+      <div className="flex 2sm:gap-4 sm:gap-20 gap-6 items-center">
         <Subtitle />
         <Contacts />
         <MenuButton />

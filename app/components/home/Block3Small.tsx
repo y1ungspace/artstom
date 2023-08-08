@@ -20,8 +20,8 @@ const Block3Small: React.FC = () => {
 
   return(
     <section className='w-[calc(100%_-_50px)] text-center pt-8 pb-4 mx-auto rounded-3xl'>
-      <h1 className='text-5xl font-bold'>Как мы работаем</h1>
-      <h3 className='component text-sm md:p-0 py-4 mb-4 mx-24 opacity-80'>Уделяем повышенное внимание эстетике и профилактике: Мы уверены и постоянно доказываем на практике, что даже простую пломбу можно поставить красиво – так, чтобы она приближала улыбку к идеалу.</h3>
+      <h1 className='sm:text-5xl text-4xl font-bold'>Как мы работаем</h1>
+      <h3 className='component text-sm md:p-0 py-4 mb-4 sm:mx-24 mx-4 opacity-80'>Уделяем повышенное внимание эстетике и профилактике: Мы уверены и постоянно доказываем на практике, что даже простую пломбу можно поставить красиво – так, чтобы она приближала улыбку к идеалу.</h3>
       <div
         className="
           flex
