@@ -5,15 +5,33 @@ import Logo from "../Logo"
 import MenuButton from "./MenuButton"
 import Links from "./Links"
 import Subtitle from "./Subtitle"
-import { useState } from "react"
+import { useEffect, useState } from "react"
 import LogoSmaller from "../LogoSmaller"
+
+
+// const contentful = require('contentful')
+
+// const client = contentful.createClient({
+//   space: 'n3fw6fm0294h',
+//   environment: 'master', // defaults to 'master' if not set
+//   accessToken: 'wg1rw5VY4qe-WDkXf9fCVv0ldCTKLougbYxF7SY1dGg'
+// })
+
+// client.getEntry('16zYjJURSaNGT684637EK1')
+//   .then((entry) => console.log(entry))
+//   .catch(console.error)
 
 const Navbar: React.FC = () => {
 
   const [topPosition, setTopPosition] = useState(0)
+  const [isMobile, setIsMobile] = useState(
+    window.screen.width <= 1100 ?
+      true :
+      false
+  )
 
   if (typeof window !== "undefined") {
-      window.onscroll = () => setTopPosition(window.scrollY)
+    window.onscroll = () => setTopPosition(window.scrollY)
   }
 
   return(
@@ -28,13 +46,11 @@ const Navbar: React.FC = () => {
       "flex items-center scale-[0.8] transition-all" : 
       "flex items-center scale-100 transition-all"
       }>
-        {typeof window === "undefined" ?
-          '' :
-          window.screen.width > 1100 ?
-          <Logo /> :
-          <LogoSmaller />
+        {
+        isMobile ? 
+         <LogoSmaller /> :
+         <Logo />
       }
-       
       </div>
       <div className="flex 2sm:gap-4 sm:gap-20 xs-gap-6 gap-2 items-center">
         <div className={

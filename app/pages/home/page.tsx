@@ -13,6 +13,7 @@ import SwiperSlider from '@/app/components/home/Swiper';
 import Swiper2 from '@/app/components/home/Swiper2';
 import TopSection from '@/app/components/TopSection';
 import Block3Small from '@/app/components/home/Block3Small';
+import { useEffect } from 'react';
 
 const topSectionObj = {
   img: '/images/woman-smiling-6.png',
@@ -21,6 +22,8 @@ const topSectionObj = {
 }
 
 export default function Home() {
+
+  // useEffect
   return (
     <>
       <TopSection data={topSectionObj} />
