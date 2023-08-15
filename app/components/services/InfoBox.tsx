@@ -79,14 +79,13 @@ const InfoBox: React.FC<{data: IServiceData, id: string}> = ({data}) => {
       >
         <div className="image-container grow p-8">
           <img
-            src="https://www.dropbox.com/s/ge6l46jc74loei8/caries.png?raw=1"
+            src={data.image}
             width={220}
             height={210}
             alt=""
             style={{
               transform: `translate(${magnetPosition.x}px, ${magnetPosition.y}px)`,
               transition: 'transform 2s ease-out',
-              width: '100%',
             }}
           />
         </div>

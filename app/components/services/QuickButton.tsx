@@ -28,11 +28,18 @@ const QuickButton: React.FC<IServiceButton> = ({data}) => {
           }`
           }>
       <img
-        src="https://www.dropbox.com/s/ge6l46jc74loei8/caries.png?raw=1"
-        width={220}
+        src={data.image}
+        width={200}
         height={210}
         alt=""
-        className="mx-auto mt-5 duration-200 group-hover:-translate-y-5 group-hover:scale-110 group-hover: drop-shadow-md"
+        className="
+          mx-auto
+          mt-5
+          duration-200
+          group-hover:-translate-y-5
+          group-hover:scale-110
+          group-hover: drop-shadow-md
+        "
       />
       <a
         href={`#box-${data.id}`}
@@ -48,6 +55,7 @@ const QuickButton: React.FC<IServiceButton> = ({data}) => {
           text-center
           font-medium
           mx-auto
+          mt-8
           uppercase
           duration-300
           group-hover:bg-base-5
