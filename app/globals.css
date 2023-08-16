@@ -109,3 +109,7 @@ html, body {
 .pop-up {
   animation: 0.5s pop-up forwards
 }
+
+.services-text p {
+  margin: 14px 0px;
+}

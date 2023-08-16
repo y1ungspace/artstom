@@ -54,7 +54,7 @@ export interface IBlock3Paragraph {
 
 export interface IServiceData {
   name: string;
-  description: string[],
+  description: string,
   image: string;
   button: {
       name: string;
@@ -78,4 +78,17 @@ export interface ItopSectionObj {
   img: string,
   title: string,
   subtitle: string,
+  url?: string,
+}
+
+export interface contentfulResponse<T> {
+  sys: {
+    id: string;
+    contentType: {
+      sys: {
+        id: string;
+      };
+    };
+  };
+  fields: T;
 }

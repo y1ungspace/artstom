@@ -5,23 +5,41 @@ import QuickButtons from '@/app/components/services/QuickButtons';
 import InfoWrapper from '@/app/components/services/InfoWrapper';
 import Slidebar from '@/app/components/services/SideBar';
 
-import { ItopSectionObj } from '@/app/variables/Interfaces';
-import services from '@/app/lib/services';
+import { IServiceData, ItopSectionObj } from '@/app/variables/Interfaces';
+// import services from '@/app/lib/services';
+import { useEffect, useState } from 'react';
+import { getServices } from '@/app/lib/contentful';
 
-const topSection: ItopSectionObj = {
-  img: '/images/woman-smiling-5.png',
-  title: 'Услуги',
-  subtitle: 'пока здесь текст не придумали пока здесь текст не придумали пока здесь текст не придумали пока здесь текст не придумали пока здесь текст не придумали пока здесь текст не придумали пока здесь текст не придумалипока здесь текст не придумали', 
-}
 
 export default function Services() {
+
+  const [data, setData] = useState<IServiceData[] | null>(null);
+
+  useEffect(() => {
+    const fetchData = async () => {
+      try {
+        const fetchedData = await getServices();
+        if (fetchedData) 
+          setData(fetchedData);
+      } catch (error) {
+        console.error("Error fetching data:", error);
+      }
+    };
+    
+    fetchData();
+  }, []);
+
+  if (!data) {
+    return <div></div>;
+  }
+
   return (
     <>
-      <TopSection data={topSection} />
-      <QuickButtons data={services} />
+      <TopSection url={'services'} />
+      <QuickButtons data={data} />
       <div className='flex gap-6 mx-10'>
-      <Slidebar data={services} />
-      <InfoWrapper data={services} />
+      <Slidebar data={data} />
+      <InfoWrapper data={data} />
       </div>
     </>
   )

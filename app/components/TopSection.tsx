@@ -2,9 +2,33 @@
 
 import Image from "next/image"
 import Logo from "./Logo"
+import { getItems } from "../lib/contentful"
+import { useEffect, useState } from "react"
 import { ItopSectionObj } from "../variables/Interfaces"
 
-const TopSection: React.FC<{data: ItopSectionObj}> = ({data}) => {
+const TopSection: React.FC<{url: string}> = ({url}) => {
+
+  const [data, setData] = useState<ItopSectionObj | null>(null);
+
+  useEffect(() => {
+    const fetchData = async () => {
+      try {
+        const fetchedData = await getItems(url);
+        console.log(fetchData)
+        if (fetchedData) 
+          setData(fetchedData);
+      } catch (error) {
+        console.error("Error fetching data:", error);
+      }
+    };
+    
+    fetchData();
+  }, [url]);
+
+  if (!data) {
+    return <div></div>;
+  }
+
   return(
     <section
       className='
@@ -65,7 +89,7 @@ const TopSection: React.FC<{data: ItopSectionObj}> = ({data}) => {
           object-top'
         width="800"
         height="800"
-        src={data.img}
+        src={`/images/woman-smiling-${data.url}.png`}
         alt=""
           />
     <div 

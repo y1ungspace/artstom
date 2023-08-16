@@ -15,7 +15,7 @@ useEffect(() => {
   if (!sidebarRef.current) {
     return
   }
-  const newPosition = (sidebarRef.current as HTMLElement).offsetTop - 90 - 40;
+  const newPosition = (sidebarRef.current as HTMLElement).offsetTop + 400 + 40;
   setTopPosition(newPosition)
 
   const blockPositions =  data.map((e) => {

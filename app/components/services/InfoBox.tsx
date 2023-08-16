@@ -3,6 +3,7 @@
 import { useState } from 'react';
 import Image from 'next/image';
 import { IServiceData } from '@/app/variables/Interfaces';
+import { marked } from 'marked';
 
 const InfoBox: React.FC<{data: IServiceData, id: string}> = ({data}) => {
   const [isMagnetActive, setIsMagnetActive] = useState(false);
@@ -70,7 +71,12 @@ const InfoBox: React.FC<{data: IServiceData, id: string}> = ({data}) => {
             >
       <div className={`text-lg font-base w-1/2 text-base-3`}>
         <h1 className='text-4xl font-md mb-5 text-base-1'>{data.name}</h1>
-        {data.description.map((text) => <p className='mb-6' key={text}>{text}</p>)}
+        <div
+          className='services-text'
+          dangerouslySetInnerHTML={
+            { __html: marked(data.description)}
+          }>
+        </div>
       </div>
       <div
         className={`flex justify-center items-center grow p-5 radial-background ${isMagnetActive ? 'magnet' : ''}`}

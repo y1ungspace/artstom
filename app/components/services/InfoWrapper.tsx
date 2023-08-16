@@ -1,6 +1,5 @@
 'use client'
 
-import services from "@/app/lib/services"
 import InfoBox from "./InfoBox"
 import { IServiceDataWrapper } from "@/app/variables/Interfaces"
 

@@ -5,29 +5,18 @@ import Logo from "../Logo"
 import MenuButton from "./MenuButton"
 import Links from "./Links"
 import Subtitle from "./Subtitle"
-import { useEffect, useState } from "react"
+import { useState } from "react"
 import LogoSmaller from "../LogoSmaller"
-
-
-// const contentful = require('contentful')
-
-// const client = contentful.createClient({
-//   space: 'n3fw6fm0294h',
-//   environment: 'master', // defaults to 'master' if not set
-//   accessToken: 'wg1rw5VY4qe-WDkXf9fCVv0ldCTKLougbYxF7SY1dGg'
-// })
-
-// client.getEntry('16zYjJURSaNGT684637EK1')
-//   .then((entry) => console.log(entry))
-//   .catch(console.error)
 
 const Navbar: React.FC = () => {
 
   const [topPosition, setTopPosition] = useState(0)
   const [isMobile, setIsMobile] = useState(
-    window.screen.width <= 1100 ?
-      true :
-      false
+    typeof window === "undefined" ? 
+    false :
+      window.screen.width <= 1100 ?
+        true :
+        false
   )
 
   if (typeof window !== "undefined") {

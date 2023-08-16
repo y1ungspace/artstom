@@ -15,18 +15,17 @@ import TopSection from '@/app/components/TopSection';
 import Block3Small from '@/app/components/home/Block3Small';
 import { useEffect } from 'react';
 
-const topSectionObj = {
-  img: '/images/woman-smiling-6.png',
-  title: 'Ваша улыбка заслуживает внимания',
-  subtitle: 'Ничто так не радует стоматолога, как вид вашей обновлённой улыбки. Позвольте себе долгосрочную инвестицию в красоту и здоровье, которая никогда не обесценится, улучшит ваш образ, облегчит общение и принесет много положительных эмоций!',
-}
+// const topSectionObj = {
+//   img: '/images/woman-smiling-6.png',
+//   title: 'Ваша улыбка заслуживает внимания',
+//   subtitle: 'Ничто так не радует стоматолога, как вид вашей обновлённой улыбки. Позвольте себе долгосрочную инвестицию в красоту и здоровье, которая никогда не обесценится, улучшит ваш образ, облегчит общение и принесет много положительных эмоций!',
+// }
 
 export default function Home() {
 
-  // useEffect
   return (
     <>
-      <TopSection data={topSectionObj} />
+      <TopSection url={'home'} />
       <Swiper2 />
       <About />
       {
