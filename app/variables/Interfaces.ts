@@ -51,6 +51,15 @@ export interface IBlock3Paragraph {
   id: number,
 }
 
+export interface IBlock3 {
+  title: string,
+  subtitle: string,
+  stage1: string,
+  stage2: string,
+  stage3: string,
+  stage4: string
+}
+
 
 export interface IServiceData {
   name: string;

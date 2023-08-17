@@ -10,7 +10,7 @@ import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 
 // import required modules
-import { EffectCoverflow } from 'swiper';
+import { EffectCoverflow, Navigation } from 'swiper';
 
 import swiperSlides2 from '@/app/lib/swiperSlides2';
 
@@ -33,21 +33,17 @@ const Swiper2 = () => {
           pl-12
         '>Примеры работ</h3>
       <Swiper
-        effect={"coverflow"}
-        slidesPerView={2.5}
-        slidesPerGroup={1}
-        centeredSlides={true}
-        slideToClickedSlide={true}
+        slidesPerView={3}
+        slidesPerGroup={3}
         loop={true}
-        coverflowEffect={{
-          rotate: 0,
-          stretch: 0,
-          depth: 200,
-          modifier: 1,
-          slideShadows: true,
+        spaceBetween={50}
+        speed={500}
+        keyboard={{
+          enabled: true,
         }}
-        modules={[EffectCoverflow]}
-        className="mySwiper md:scale-100 scale-150 md:py-0 py-4"
+        navigation={true}
+        modules={[Navigation]}
+        className="mySwiper customSwiper px-12 md:scale-100 scale-150 md:py-0 py-4"
       >
         {arrayOfSlides.map(slide => 
           <SwiperSlide className='group'
@@ -55,8 +51,17 @@ const Swiper2 = () => {
           >
           <img
             src={slide.url}
-            className="rounded-2xl"
+            className="rounded-2xl duration-100 ease-in-out"
             />
+          <p className={
+            (slide.progress < 1 ?
+              "bg-base-3" :
+              slide.progress < 2 ?
+                "bg-base-5" :
+                "bg-base-2")
+            + " group-hover:opacity-80 duration-100 inline px-3 text-sm font-medium text-center rounded-lg text-base-4 translate-y-5 opacity-0 uppercase"
+          }
+          >{slide.progress < 1 ? "До Лечения" : slide.progress < 2 ? "После Лечения" : "Конечный Результат"}</p>
         </SwiperSlide>
           )}
       </Swiper>

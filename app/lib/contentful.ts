@@ -1,4 +1,4 @@
-import { IServiceData, ItopSectionObj, contentfulResponse } from "../variables/Interfaces";
+import { IBlock3, IPurpose, IServiceData, ItopSectionObj, contentfulResponse } from "../variables/Interfaces";
 
 const axios = require('axios');
 
@@ -19,7 +19,6 @@ export async function getItems(url: string) {
 
     const items: contentfulResponse<ItopSectionObj>[] = response.data.items;
     const result = items.find(e => e.fields.url === url);
-    console.log(items, url)
     return result?.fields
 
   } catch (error) {
@@ -35,7 +34,7 @@ export async function getServices() {
       },
       params: {
         content_type: 'serviceCard', // Replace with the actual content type ID
-        limit: 10 // Number of items to retrieve
+        limit: 20 // Number of items to retrieve
       }
     });
 
@@ -53,5 +52,49 @@ export async function getServices() {
 }
 
 
+export async function getPurposes() {
+  try {
+    const response = await axios.get(`https://cdn.contentful.com/spaces/${spaceId}/entries`, {
+      headers: {
+        Authorization: `Bearer ${accessToken}`
+      },
+      params: {
+        content_type: 'purpose', // Replace with the actual content type ID
+        limit: 10 // Number of items to retrieve
+      }
+    });
+
+    const items: contentfulResponse<IPurpose>[] = response.data.items;
+    const result = items.map(e => 
+      {
+        return e.fields
+      })
+      result.reverse()
+    return result
+
+  } catch (error) {
+    console.error('Error fetching items:', error);
+  }
+}
 
 
+export async function getBlock3() {
+  try {
+    const response = await axios.get(`https://cdn.contentful.com/spaces/${spaceId}/entries`, {
+      headers: {
+        Authorization: `Bearer ${accessToken}`
+      },
+      params: {
+        content_type: 'block3', // Replace with the actual content type ID
+        limit: 1 // Number of items to retrieve
+      }
+    });
+
+    const items: contentfulResponse<IBlock3>[] = response.data.items;
+    const result = items[0].fields
+    return result
+
+  } catch (error) {
+    console.error('Error fetching items:', error);
+  }
+}

@@ -1,10 +1,31 @@
 'use client'
 
-import purposesArray from "@/app/lib/purposes"
+import { getPurposes } from "@/app/lib/contentful"
 import { IPurpose } from "@/app/variables/Interfaces"
 import Image from "next/image"
+import { useEffect, useState } from "react"
 
 const Purposes: React.FC = () => {
+
+  const [data, setData] = useState<IPurpose[] | null>(null);
+
+  useEffect(() => {
+    const fetchData = async () => {
+      try {
+        const fetchedData = await getPurposes();
+        if (fetchedData) 
+          setData(fetchedData);
+      } catch (error) {
+        console.error("Error fetching data:", error);
+      }
+    };
+    
+    fetchData();
+  }, []);
+
+  if (!data) {
+    return <div></div>;
+  }
 
   const Purpose: React.FC<IPurpose> = (props) => {
     return(
@@ -24,7 +45,7 @@ const Purposes: React.FC = () => {
     )
   }
 
-  const purposes = purposesArray.map((purpose) => (
+  const purposes = data.map((purpose) => (
     <Purpose title={purpose.title} description={purpose.description} />
   ))
  

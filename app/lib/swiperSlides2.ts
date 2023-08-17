@@ -1,5 +1,9 @@
 const swiperSlides2 = [
   {
+    url: "/images/Example5.jpg",
+    progress: 0,
+  },
+  {
     url: "/images/Example8.jpg",
     progress: 1,
   },
@@ -30,10 +34,6 @@ const swiperSlides2 = [
   {
     url: "/images/Example3.jpg",
     progress: 2,
-  },
-  {
-    url: "/images/Example5.jpg",
-    progress: 0,
   },
 ]
 
