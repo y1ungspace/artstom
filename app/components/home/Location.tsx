@@ -1,6 +1,32 @@
 'use client'
 
+import { getLocation } from "@/app/lib/contentful";
+import { ILocation } from "@/app/variables/Interfaces";
+import { useEffect, useState } from "react";
+
 const Location: React.FC = () => {
+
+  const [data, setData] = useState<ILocation | null>(null);
+
+  useEffect(() => {
+    const fetchData = async () => {
+      try {
+        const fetchedData = await getLocation();
+        if (fetchedData) 
+          setData(fetchedData);
+          console.log(fetchedData);
+      } catch (error) {
+        console.error("Error fetching data:", error);
+      }
+    };
+    
+    fetchData();
+  }, []);
+
+  if (!data) {
+    return <div></div>;
+  }
+
   return(
     <section 
       className='
@@ -21,7 +47,7 @@ const Location: React.FC = () => {
           xs:text-3xl
           text-2xl
           font-bold
-        ">До нас легко добраться</h1>
+        ">{data.title}</h1>
       <h3
         className="
           lg:text-lg
@@ -36,7 +62,7 @@ const Location: React.FC = () => {
           2sm:px-0
           xs:px-8
           pt-2"
-        >Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo quis dolores ab animi esse? Facere molestiae, voluptates repudiandae sapiente ut sit aliquid, quos libero, atque distinctio recusandae dolore eius illum?</h3>
+        >{data.subtitle}</h3>
       <div style={{position: 'relative', overflow: 'hidden'}}>
         <a 
           href="https://yandex.ru/maps/org/artstom/27705467946/?utm_medium=mapframe&utm_source=maps" 

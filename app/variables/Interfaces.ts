@@ -45,6 +45,12 @@ export interface IPurpose {
   description: string
 }
 
+export interface IAbout {
+  title1: string,
+  title2: string,
+  subtitle: string,
+}
+
 export interface IBlock3Paragraph {
   img: string,
   text: string,
@@ -58,6 +64,11 @@ export interface IBlock3 {
   stage2: string,
   stage3: string,
   stage4: string
+}
+
+export interface ILocation {
+  title: string,
+  subtitle: string,
 }
 
 

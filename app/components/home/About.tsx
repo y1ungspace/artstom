@@ -1,7 +1,10 @@
 'use client'
 
+import { getAbout } from '@/app/lib/contentful'
+import { IAbout } from '@/app/variables/Interfaces'
 import { Inter } from 'next/font/google'
 import Image from 'next/image'
+import { useEffect, useState } from 'react'
 
 const fontInter = Inter({
   subsets: ['cyrillic'],
@@ -9,6 +12,28 @@ const fontInter = Inter({
 })
 
 const About: React.FC = () => {
+
+  const [data, setData] = useState<IAbout | null>(null);
+
+  useEffect(() => {
+    const fetchData = async () => {
+      try {
+        const fetchedData = await getAbout();
+        if (fetchedData) 
+          setData(fetchedData);
+          console.log(fetchedData);
+      } catch (error) {
+        console.error("Error fetching data:", error);
+      }
+    };
+    
+    fetchData();
+  }, []);
+
+  if (!data) {
+    return <div></div>;
+  }
+
   return(
     <div className='2md:max-h-[600px]'>
       <div className='flex 2md:flex-row flex-col items-center w-[calc(100%_-_50px)] bg-base-4 mx-auto 2md:mt-12 my-12 rounded-3xl'>
@@ -33,10 +58,10 @@ const About: React.FC = () => {
           />
         <div className={'flex flex-col gap-5 xl:mt-32 lg:mt-16 sm:mt-8 mt-4 sm:mx-10 mx-4 ' + fontInter.className}>
           <div className='2lg:text-4xl lg:text-3xl 2md:text-xl sm:text-2xl text-xl font-semibold'>
-            <h3 className='opacity-80'>Вот уже 15 лет я занимаюсь любимым делом, </h3>
-            <p className='opacity-100'>моя цель – идеальная улыбка.</p>
+            <h3 className='opacity-80'>{data.title1}</h3>
+            <p className='opacity-100'>{data.title2}</p>
           </div>
-          <p className='lg:text-xl 3md:text-lg text-base opacity-80'> Мы выполним комплексную работу по диагностике состояния височно-нижнечелюстного сустава жевательных мышц, лечению зубов и  протезированию.Наши знания и навыки позволяют восстановить красоту улыбки , здоровую функцию мышц , височно-нижнечелюстного сустава и функциональную анатомию зубов.Мы специализируемся на высокоэстетичном протезировании тонкими накладками и винирами E-max.</p>
+          <p className='lg:text-xl 3md:text-lg text-base opacity-80'>{data.subtitle}</p>
           <div className='flex 2md:gap-20 gap-12 xl:mt-14 lg:mt-12 2md:mt-4 2md:mb-0 mb-4'>
             <button className='text-base-2 font-medium'>{'Услуги >'}</button>
             <button className='text-base-2 font-medium'>{'Цены >'}</button>
