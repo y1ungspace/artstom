@@ -8,8 +8,6 @@ import Slidebar from '@/app/components/services/SideBar';
 import { IServiceData } from '@/app/variables/Interfaces';
 import { useEffect, useState } from 'react';
 import { getServices } from '@/app/lib/contentful';
-import 'public/icons/tooth-icon-7.PNG'
-
 
 export default function Services() {
 
