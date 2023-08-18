@@ -5,10 +5,10 @@ import QuickButtons from '@/app/components/services/QuickButtons';
 import InfoWrapper from '@/app/components/services/InfoWrapper';
 import Slidebar from '@/app/components/services/SideBar';
 
-import { IServiceData, ItopSectionObj } from '@/app/variables/Interfaces';
-// import services from '@/app/lib/services';
+import { IServiceData } from '@/app/variables/Interfaces';
 import { useEffect, useState } from 'react';
 import { getServices } from '@/app/lib/contentful';
+import 'public/icons/tooth-icon-7.PNG'
 
 
 export default function Services() {
