@@ -5,23 +5,20 @@ import Logo from "../Logo"
 import MenuButton from "./MenuButton"
 import Links from "./Links"
 import Subtitle from "./Subtitle"
-import { useState } from "react"
+import { useEffect, useState } from "react"
 import LogoSmaller from "../LogoSmaller"
 
 const Navbar: React.FC = () => {
 
   const [topPosition, setTopPosition] = useState(0)
-  const [isMobile, setIsMobile] = useState(
-    typeof window === "undefined" ? 
-    false :
-      window.screen.width <= 1100 ?
-        true :
-        false
-  )
+  const [isMobile, setIsMobile] = useState(false)
 
-  if (typeof window !== "undefined") {
+  useEffect(() =>{
+    setIsMobile(window.screen.width <= 1100 ?
+      true :
+      false)
     window.onscroll = () => setTopPosition(window.scrollY)
-  }
+  })
 
   return(
     <section className={
