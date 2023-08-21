@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 
 // Import Swiper React components
 import { Swiper, SwiperSlide} from 'swiper/react';
@@ -17,6 +17,25 @@ import swiperSlides2 from '@/app/lib/swiperSlides2';
 const arrayOfSlides = swiperSlides2;
 
 const Swiper2 = () => {
+
+  const [slidesPerView, setSlidesPerView] = useState(3);
+  const [spaceBetween, setSpaceBetween] = useState(50);
+
+  useEffect(() => {
+    const screenWidth = window.innerWidth
+    switch (true) {
+      case screenWidth >= 1024: 
+        setSlidesPerView(3)
+        setSpaceBetween(50)
+      case screenWidth >= 720:
+        setSlidesPerView(3)
+        setSpaceBetween(30)
+      case screenWidth < 720:
+        setSlidesPerView(1)
+        setSpaceBetween(30)
+    }
+  })
+
   return (
     <>
       <h3
@@ -33,17 +52,24 @@ const Swiper2 = () => {
           pl-12
         '>Примеры работ</h3>
       <Swiper
-        slidesPerView={3}
-        slidesPerGroup={3}
+        slidesPerView={slidesPerView}
+        slidesPerGroup={slidesPerView}
         loop={true}
-        spaceBetween={50}
+        spaceBetween={spaceBetween}
         speed={500}
         keyboard={{
           enabled: true,
         }}
         navigation={true}
         modules={[Navigation]}
-        className="mySwiper customSwiper px-12 md:scale-100 scale-150 md:py-0 py-4"
+        className="
+          mySwiper
+          customSwiper
+          px-12
+          scale-100
+          md:py-0
+          py-4
+        "
       >
         {arrayOfSlides.map(slide => 
           <SwiperSlide className='group'
@@ -59,7 +85,7 @@ const Swiper2 = () => {
               slide.progress < 2 ?
                 "bg-base-5" :
                 "bg-base-2")
-            + " group-hover:opacity-80 duration-100 inline px-3 text-sm font-medium text-center rounded-lg text-base-4 translate-y-5 opacity-0 uppercase"
+            + " group-hover:opacity-80 duration-100 inline px-3 text-sm font-medium text-center rounded-lg text-base-4 translate-y-5 lg:opacity-0 uppercase"
           }
           >{slide.progress < 1 ? "До Лечения" : slide.progress < 2 ? "После Лечения" : "Конечный Результат"}</p>
         </SwiperSlide>
