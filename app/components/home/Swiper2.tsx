@@ -10,7 +10,7 @@ import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 
 // import required modules
-import { EffectCoverflow, Navigation } from 'swiper';
+import { Navigation } from 'swiper';
 
 import swiperSlides2 from '@/app/lib/swiperSlides2';
 
@@ -27,12 +27,15 @@ const Swiper2 = () => {
       case screenWidth >= 1024: 
         setSlidesPerView(3)
         setSpaceBetween(50)
-      case screenWidth >= 720:
+        break;
+      case screenWidth >= 720 && screenWidth < 1024:
         setSlidesPerView(3)
         setSpaceBetween(30)
+        break;
       case screenWidth < 720:
         setSlidesPerView(1)
         setSpaceBetween(30)
+        break;
     }
   })
 
