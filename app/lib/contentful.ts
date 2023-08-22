@@ -38,12 +38,16 @@ export async function getServices() {
       }
     });
 
+    const compareById = (a:IServiceData, b:IServiceData) => {
+      return a.id - b.id;
+    }
+
     const items: contentfulResponse<IServiceData>[] = response.data.items;
     const result = items.map(e => 
       {
         return e.fields
       })
-      result.reverse()
+      result.sort(compareById)
     return result
 
   } catch (error) {
@@ -64,12 +68,16 @@ export async function getPurposes() {
       }
     });
 
+    const compareById = (a:IPurpose, b:IPurpose) => {
+      return a.id - b.id;
+    }
+
     const items: contentfulResponse<IPurpose>[] = response.data.items;
     const result = items.map(e => 
       {
         return e.fields
       })
-      result.reverse()
+      result.sort(compareById)
     return result
 
   } catch (error) {

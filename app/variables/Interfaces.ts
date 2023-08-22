@@ -42,7 +42,8 @@ export interface ISlider {
 
 export interface IPurpose {
   title: string,
-  description: string
+  description: string,
+  id: number,
 }
 
 export interface IAbout {
