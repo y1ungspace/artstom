@@ -46,7 +46,11 @@ const Purposes: React.FC = () => {
   }
 
   const purposes = data.map((purpose) => (
-    <Purpose title={purpose.title} description={purpose.description} />
+    <Purpose
+      title={purpose.title}
+      description={purpose.description}
+      id={purpose.id}
+      />
   ))
  
   return(   
