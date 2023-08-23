@@ -1,7 +1,13 @@
 'use client';
 
+import TopSection from "@/app/components/TopSection";
+import ImageBoxWrapper from "@/app/components/gallery/ImageBoxWrapper";
+
 export default function Gallery() {
   return (
-    <h1 className='text-3xl pt-32 text-center'>Галерея</h1>
+  <>
+    <TopSection url={'gallery'} />
+    <ImageBoxWrapper />
+  </>
   )
 } 
