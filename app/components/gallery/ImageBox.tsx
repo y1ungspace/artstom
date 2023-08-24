@@ -1,13 +1,16 @@
 'use client'
 
+import { IImageBox } from "@/app/variables/Interfaces"
 import MasonryLayout from "./MasonryLayout"
 
-const ImageBox: React.FC<{images: string[]}> = ({images}) => {
+const ImageBox: React.FC<{props: IImageBox}> = ({props}) => {
   return(
     <section
+      key={props.id}
       className="
         w-[calc(100%_-_50px)]
         mx-auto
+        mb-10
       ">
       <div
         className="
@@ -24,7 +27,7 @@ const ImageBox: React.FC<{images: string[]}> = ({images}) => {
           text-base-1/80
           font-medium
           ">
-            Пациент Вова</h3>
+            {props.name}</h3>
         <div
           className="
             w-2
@@ -40,9 +43,9 @@ const ImageBox: React.FC<{images: string[]}> = ({images}) => {
             uppercase
             text-base-1/50
           ">
-            Услуга</h3>
+            {props.serviceType}</h3>
       </div>
-      <MasonryLayout images={images} />
+      <MasonryLayout images={props.images} />
     </section>
   )
 }

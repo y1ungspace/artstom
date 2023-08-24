@@ -113,3 +113,10 @@ export interface contentfulResponse<T> {
   };
   fields: T;
 }
+
+export interface IImageBox {
+  name: string;
+  serviceType: string;
+  id: number;
+  images: string[];
+}
