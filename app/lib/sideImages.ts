@@ -5,7 +5,6 @@ export async function getStaticProps() {
 
   const numberOfSlides = 5;
 
-  // const sliderResponse: SlideData = await fetcher(`${process.env.NEXT_PUBLIC_STRAPI_URL}/api/slider-images?populate=*`)
   const result: sliderApiRespnose[] = []
 
   const imagesArray = [

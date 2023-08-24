@@ -1,7 +1,8 @@
 'use client'
 
+import MasonryLayout from "./MasonryLayout"
 
-const ImageBox: React.FC = () => {
+const ImageBox: React.FC<{images: string[]}> = ({images}) => {
   return(
     <section
       className="
@@ -41,15 +42,7 @@ const ImageBox: React.FC = () => {
           ">
             Услуга</h3>
       </div>
-      <div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-      </div>
+      <MasonryLayout images={images} />
     </section>
   )
 }

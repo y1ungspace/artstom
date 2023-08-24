@@ -130,3 +130,13 @@ html, body {
 .services-text p {
   margin: 14px 0px;
 }
+
+
+/* masonry */
+
+.my-masonry-grid {
+  display: flex;
+  width: auto;
+  height: min-content;
+  padding: 0 20px;
+}
