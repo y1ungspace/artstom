@@ -21,7 +21,13 @@ const MasonryLayout = ({ images }: {images: string[]}) => {
             alt='img'
             width={4000}
             height={4000}
-            className='w-full p-2'
+            className='
+              w-full
+              p-2
+              cursor-pointer
+              duration-500
+              hover:scale-105
+            '
           />
         </div>
       ))}

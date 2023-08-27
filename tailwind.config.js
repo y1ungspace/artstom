@@ -15,7 +15,9 @@ module.exports = {
         'background': 'url("../public/images/background.jpg")',
         'gradient-conic':
           'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
-        'servises': 'url("../public/images/servises-background.svg")'
+        'servises': 'url("../public/images/servises-background.svg")',
+        'button-left': 'url("../public/icons/chevron_left_FILL0_wght400_GRAD0_opsz48.svg")',
+        'button-right': 'url("../public/icons/chevron_right_FILL0_wght400_GRAD0_opsz48.svg")',
       },
       boxShadow:{
         'white': 'box-shadow: 0 0 20px 0px rgba(256, 256, 256, 0.35)'

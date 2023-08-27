@@ -2,6 +2,8 @@
 
 import { IImageBox } from "@/app/variables/Interfaces"
 import ImageBox from "./ImageBox"
+import Modal from "./Modal"
+import { useEffect, useState } from "react"
 
 const imageBox2:IImageBox = {
   name: 'Подуст' ,
@@ -55,19 +57,48 @@ const imageBox1:IImageBox = {
     'https://www.dropbox.com/scl/fi/guo8ojm0irz38smderk5w/DSC_0679.jpg?rlkey=gdjs1euim53eqi2voayetuzpd&raw=1',
     'https://www.dropbox.com/scl/fi/whksbkf8mg70q5t6yeykl/DSC_0777.jpg?rlkey=9k2wygkzd9dux91yn2afdwvlq&raw=1',
     'https://www.dropbox.com/scl/fi/pyxzbbf618bvco5th0j0n/DSC_0680.jpg?rlkey=aexrvb420csfz9n01q8mvhiy7&raw=1',
-    'https://www.dropbox.com/scl/fi/xvqo6087r8yftcee5gynm/IMG_6443.MOV?rlkey=mqy2t8wo5prs65raggr2m3kn3&raw=1'
+    // 'https://www.dropbox.com/scl/fi/xvqo6087r8yftcee5gynm/IMG_6443.MOV?rlkey=mqy2t8wo5prs65raggr2m3kn3&raw=1'
   ],
 }
 
 const ImageBoxWrapper: React.FC = () => {
+
+  const [isModal, setIsModal] = useState(false)
+  const [activeImage, setActiveImage] = useState<string | null>(null)
+
+   useEffect(() => {
+    const onClick = (event: MouseEvent) => {
+      const target = event.target as HTMLImageElement
+      if (target.tagName === 'IMG') {
+        setIsModal(true)
+        setActiveImage(target.srcset)
+      } else if (target.id !== 'modal-img') {
+        setIsModal(false)
+      }
+    };
+
+    window.addEventListener('click', onClick, false);
+
+    return () => {
+      window.removeEventListener('click', onClick, false);
+    };
+  }, []);
+
   return(
-    <section
-      className="
-        mt-16
-      ">
-       <ImageBox props={imageBox1} />
-       <ImageBox props={imageBox2} />
-    </section>
+    <>
+      <section
+        className="
+          mt-16
+        ">
+        <ImageBox props={imageBox1} />
+        <ImageBox props={imageBox2} />
+      </section>
+      {isModal && activeImage ? 
+        <Modal image={activeImage} /> :
+        <></>
+      }
+      {/* <Modal image={'f'} /> */}
+    </>
   )
 }
 
