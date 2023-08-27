@@ -5,12 +5,12 @@ import Masonry from 'react-smart-masonry';
 import Image from 'next/image';
 
 
-const breakpoints = { mobile: 0, tablet: 900, desktop: 1200 };
+const breakpoints = { mobile: 0, tablet: 600, desktop: 900, desktopPlus: 1200 };
 const MasonryLayout = ({ images }: {images: string[]}) => {
   return (
     <Masonry
       breakpoints={breakpoints}
-      columns={{ mobile: 2, tablet: 3, desktop: 4 }}
+      columns={{ mobile: 1, tablet: 2, desktop: 3 , desktopPlus: 4 }}
       autoArrange
       className="my-masonry-grid"
     >

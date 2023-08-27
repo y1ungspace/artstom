@@ -151,5 +151,5 @@ html, body {
 }
 
 .modal-appear {
-  animation: 0.5s appear forwards
+  animation: 0.3s appear forwards
 }

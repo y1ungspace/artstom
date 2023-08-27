@@ -44,7 +44,12 @@ const Modal: React.FC<{image: string}> = ({image}) => {
           height="100"
           className="
             w-full
-            h-[700px]
+            xl:h-[700px]
+            2lg:h-[600px]
+            3md:h-[500px]
+            md:h-[400px]
+            sm:h-[300px]
+            h-[250px]
             bg-cover
             rounded-2xl
           "
