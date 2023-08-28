@@ -68,7 +68,7 @@ const TopSection: React.FC<{url: string}> = ({url}) => {
         className='
           md:absolute
           block
-          lg:top-14 
+          lg:top-20 
           3md:top-0
           -top-16
           xl:right-[100px]
