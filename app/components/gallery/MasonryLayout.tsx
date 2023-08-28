@@ -19,8 +19,8 @@ const MasonryLayout = ({ images }: {images: string[]}) => {
           <Image
             src={image}
             alt='img'
-            width={4000}
-            height={4000}
+            width={3000}
+            height={3000}
             className='
               w-full
               p-2
