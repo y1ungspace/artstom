@@ -16,7 +16,7 @@ const MasonryLayout = ({ images }: {images: string[]}) => {
     >
       {images.map((imagegh, index) => (
         <div key={index} className="my-masonry-grid-item">
-          <Image
+          <img
             src={imagegh}
             alt='img'
             width={3000}
