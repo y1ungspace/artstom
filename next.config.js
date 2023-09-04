@@ -11,17 +11,17 @@ const nextConfig = {
         port: '1337',
         pathname: '/uploads/**',
       },
-      // {
-      //   protocol: 'https',
-      //   hostname: 'www.dropbox.com',
-      //   port: '',
-      //   pathname: '/s/**',
-      // },
       {
         protocol: 'https',
         hostname: 'www.dropbox.com',
         port: '',
-        pathname: '/scl/fi/**',
+        pathname: '/s/**',
+      },
+      {
+        protocol: 'https',
+        hostname: 'www.dropbox.com',
+        port: '',
+        pathname: '/scl/**',
       },
       {
         protocol: 'https',
