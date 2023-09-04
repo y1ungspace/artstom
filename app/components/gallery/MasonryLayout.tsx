@@ -14,10 +14,10 @@ const MasonryLayout = ({ images }: {images: string[]}) => {
       autoArrange
       className="my-masonry-grid"
     >
-      {images.map((image, index) => (
+      {images.map((imagegh, index) => (
         <div key={index} className="my-masonry-grid-item">
           <Image
-            src={image}
+            src={imagegh}
             alt='img'
             width={3000}
             height={3000}
